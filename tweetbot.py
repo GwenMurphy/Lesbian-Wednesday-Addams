@@ -24,10 +24,13 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)-12s - %(name)-12s - %(message)-12s', '%Y-%m-%d %H:%M:%S')
 timestr = time.strftime("%Y%m%d")
-os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/')
+os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/Logs/')
 handler = logging.FileHandler(f'{timestr}_LWA_Info.log')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
+##### Second os.chdir() just in case. I want the logs in the Logs subfolder.
+os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/')
+
 
 ##### ##### ##### ##### ##### What the bot will tweet.
 def tweet():
