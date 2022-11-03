@@ -1,0 +1,66 @@
+Authentication complete.
+Tweet 24 of 106 posted: What's worse than Camp Chippewa? A printer, according to some man whose comment I overheard the other day.
+Authentication complete.
+Tweet 97 of 107 posted: I want something to eat, but I don't know what I want.
+Authentication complete.
+Tweet 41 of 107 posted: Who's that off-brand Uncle Fester playing at in the East?
+Authentication complete.
+Tweet 27 of 107 posted: Sailor Saturn? I like her.
+Authentication complete.
+Tweet 57 of 107 posted: Chloë Grace Moretz voiced me well.
+Authentication complete.
+Tweet 20 of 107 posted: Ah, what I would not give for Karen Gillan to look me in the eye and say 'Cara mia'.
+Authentication complete.
+Tweet 16 of 107 posted: Where's a thunderstorm when you need one?
+Authentication complete.
+Tweet 74 of 107 posted: Could you imagine if Uncle Fester went to an anime convention? They'd say One Punch Man let himself go.
+Authentication complete.
+Tweet 72 of 107 posted: I've got the music from Sailor Moon stuck in my head. Not gonna lie, though, I like it.
+Authentication complete.
+Tweet 32 of 107 posted: Be afraid. Be very afraid.
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 134, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 116, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+187 - Status is a duplicate.
+Authentication complete.
+Tweet 49 of 107 posted: I wonder whose idea was it to call bras 'over the shoulder boulder holders'.
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 134, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 116, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+187 - Status is a duplicate.
+Authentication complete.
+Tweet 55 of 107 posted: Man, those two at Camp Chippewa were the Gary, Indiana of people.
+Authentication complete.
+Tweet 30 of 107 posted: I'll stop wearing black when they make a darker color.
+Authentication complete.
+Tweet 70 of 111 posted: I sometimes wish I was in the Townsend Agency. Someone should make fanfiction of that, come to think of it. The Addams Family x 2019 Charlie's Angels would be an interesting combination
+Authentication complete.
+Tweet 105 of 111 posted: Been playing a lot of GTA V recently. I like the chaos.
+Authentication complete.
+Tweet 58 of 111 posted: I can almost hear people watching the Addams Family films everywhere. So this is what the Droste effect is. Interesting.
+Authentication complete.
+Tweet 43 of 112 posted: Okay, I admit it. I like Billie Eilish.
+Authentication complete.
+Tweet 78 of 112 posted: A friend of mine told me I should cosplay as Sailor Saturn. I'll give it some thought. She's my favourite sailor scout, after all.
+Authentication complete.
+Tweet 57 of 112 posted: I want nothing more than to just chill on some days. Today seems to be one of them.

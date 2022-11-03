@@ -1,0 +1,14 @@
+## Files not to upload
+credentials.py
+iftweet.py
+
+## Folders not to upload
+__pycache__/credentials.cpython-38.pyc
+__pycache__/credentials.cpython-39.pyc
+__pycache__/credentials.cpython-310.pyc
+__pycache__/tweetbot.cpython-310.pyc
+__pycache__/tweetlist.cpython-38.pyc
+__pycache__/tweetlist.cpython-39.pyc
+__pycache__/tweetlist.cpython-310.pyc
+.vscode/settings.json
+
