@@ -142,17 +142,16 @@ def tweet():
 try:
     tweet()
 except TweepyException as err:
-    if err.args[0][0]['code'] == 186:
+    if err.args[0][0]['code'] == '186':
         ##### If the
         print(f'{time.asctime()} - Error 186 - Tweet {twln} of {twln_tot}: Tweet needs to be shortened.')
         quit()
-    if err.args[0][0]['code'] == 187:
+    if err.args[0][0]['code'] == '187':
         print(f'{time.asctime()} - Error 187 - Tweet {twln} of {twln_tot}: Duplicate tweet detected. Same thing posted since this time yesterday.')
         quit()
-    if err.args[0][0]['code'] == 215:
+    if err.args[0][0]['code'] == '215':
         print(f'{time.asctime()} - Error 215 - Bad authentication data. Please make sure your keys/credentials are correct and try again.')
         quit()
-    if err.args[0][0]['code'] == 401:
+    if err.args[0][0]['code'] == '401':
         print(f'{time.asctime()} - Error 401 - Unauthorized. Please make sure your keys/credentials are correct and try again.')
         quit()
-

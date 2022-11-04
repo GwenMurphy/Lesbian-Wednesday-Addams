@@ -122,3 +122,24 @@ Traceback (most recent call last):
   File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 17, in <module>
     from tweepy import OAuthHandler, API, TweepError
 ImportError: cannot import name 'TweepError' from 'tweepy' (/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/__init__.py)
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 143, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 130, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+187 - Status is a duplicate.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 145, in <module>
+    if err.args[0][0]['code'] == 186:
+TypeError: string indices must be integers
