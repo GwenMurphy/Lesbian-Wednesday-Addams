@@ -108,3 +108,7 @@ Traceback (most recent call last):
     raise Forbidden(resp)
 tweepy.errors.Forbidden: 403 Forbidden
 186 - Tweet needs to be a bit shorter.
+Authentication complete.
+Tweet 100 of 113 posted: It was foggy this morning, and I liked it. Now it's sunny... damn it.
+Authentication complete.
+Tweet 110 of 113 posted: I tried brussels sprouts once. No thanks. What madman brought those things into existence?
