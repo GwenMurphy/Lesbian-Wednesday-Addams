@@ -64,3 +64,47 @@ Authentication complete.
 Tweet 78 of 112 posted: A friend of mine told me I should cosplay as Sailor Saturn. I'll give it some thought. She's my favourite sailor scout, after all.
 Authentication complete.
 Tweet 57 of 112 posted: I want nothing more than to just chill on some days. Today seems to be one of them.
+Authentication complete.
+Conditional Tweet 5 of 5 posted: Thank goth it's Wednesday. The best day of the week, though I may be a bit biased on that one.
+Authentication complete.
+Conditional Tweet 5 of 5 posted: Thank goth it's Wednesday. The best day of the week, though I may be a bit biased on that one.
+Authentication complete.
+Tweet 18 of 113 posted: Thing's had a guess at what I dreamt of the other day. "A day out with Emma Watson, watching the Addams Family, half of us wondering whether the Droste Effect is happening like something out of the Twilight Zone" was what he wrote down.
+Authentication complete.
+Tweet 6 of 113 posted: Why do I have A View To A Kill stuck in my head all of a sudden?
+Authentication complete.
+Tweet 32 of 113 posted: On Wednesdays, we wear black.
+Authentication complete.
+Tweet 96 of 113 posted: What is this 'uwu' energy people keep mentioning? I'm aware kittens possess that energy, but still...
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 137, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 119, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+186 - Tweet needs to be a bit shorter.
+Authentication complete.
+Tweet 108 of 113 posted: I'm not surprised that lettuce won. I give myself 7 days before I have some surreal dream about a civilization of sentient pieces of lettuce.
+Authentication complete.
+Tweet 23 of 113 posted: Why do people make doing certain processes hard? I swear it ends up taking 5 hours to do something that should take minutes.
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 137, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 119, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+186 - Tweet needs to be a bit shorter.
