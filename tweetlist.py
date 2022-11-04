@@ -84,6 +84,14 @@ streetfood = [
     'choripán',
     'empanadas',
     'fugazzeta',
+    ##### Bolivia
+    'salteñas',
+    'helado de canela',
+    'buñuelos',
+    'sanduíche de chola',
+    ##### Brazil
+    'acarejé',
+    'feijoada',
     ##### Colombia
     'ajiaco',
     'arepa',
@@ -142,7 +150,7 @@ gamingpeeves = [
 	f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
     'lag in World of Warships',
     'my computer bluescreening',
-    'my game slowing to a crawl because another game decided it wanted to update at that specific moment when I\'m trying to do something',
+    'my game slowing to a crawl because another game decided it wanted to update then and there',
     'the internet cutting out',
 ]
 sailorscouts = [
@@ -191,7 +199,7 @@ scenarios = [
     'messing with people by leaving dice at the zoo so they think we\'re playing Jumanji',
     'binging Star Trek until the early hours',
     'watching Lord of the Rings in one sitting',
-    'watching the Addams Family, half of us wondering whether the Droste Effect is happening like something out of the Twilight Zone',
+    'watching the Addams Family with a inkling that the Droste effect is in motion',
     'introducing them to Sailor Moon (the Japanese dub w/ English subtitles is the best)',
     'making Zombocom references every time a welcome sign is spotted',
     'playing pool and having a few beers',
@@ -240,13 +248,13 @@ tweetlist = [
 
     ##### ##### Tweets 12 to 113 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
-    f'Pugsley just tried to guess what I dreamt about the other night for reasons I can\'t quite fathom. He\'s under the impression it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
+    f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
     f'For {random.randint(1, 751)/1000} seconds I imagined Father spending some time in France. As for how dramatic he\'d be on a scale of 1 to 10 when he notices everyone speaking French, I\'d say at least {random.randint(50, 1000)}.',
     f'Where\'s a thunderstorm when you need one? It\'s been at least {random.randint(3,8)} days since the last one.',
     f'There\'s nothing better than a peaceful night, a gentle breeze and a temperature of {random.randint(16,22)}°C',
     f'Thing\'s had a guess at what I dreamt of the other day. "A day out with {random.choice(celeb)}, {random.choice(scenarios)}" was what he wrote down.',
-    f'Someone\'s just tried to guess what\'s on my mind now. They said, "{random.choice(celeb)}, a decent serving of {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off...',
+    f'Someone just tried to guess what\'s on my mind now. They said, "{random.choice(celeb)}, a serving of {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
     f'What I need is a sling ring and some highly advanced technology so that I can give Sailor Pluto some {random.choice(streetfood)} and a much needed hug.',
     f'Sometimes, my internet wants to run like it was made in {random.randint(1327,1933)}.',
     f'Trying to get VS Code, WSL and GitHub to play ball together\'s a pain in the ass. At least {random.randint(95,175)}% pure frustration.',

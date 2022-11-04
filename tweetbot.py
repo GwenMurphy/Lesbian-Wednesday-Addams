@@ -14,6 +14,7 @@ import os
 import datetime
 from credentials import *
 from tweetlist import *
+from tweepy import OAuthHandler, API, TweepError
 auth = tp.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tp.API(auth)
@@ -32,11 +33,14 @@ logger.addHandler(handler)
 os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/')
 
 
+
 ##### ##### ##### ##### ##### What the bot will tweet.
 def tweet():
     ##### ##### Picks a number from the main tweetlist and adds one to the number.
     line = random.randint(0, len(tweetlist)-1)
+    global twln
     twln = line + 1
+    global twln_tot
     twln_tot = len(tweetlist)
 
     ##### ##### Make it work for the conditional tweetlist too.
@@ -81,10 +85,17 @@ def tweet():
         ##### Is it Wednesday?
         elif datetime.datetime.today().weekday() == 2:
             ct_twln = 5
-            api.update_status(conditional_tweetlist[ct_twln-1])
-            print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-            logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-            quit()
+            days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+            if days[datetime.datetime.today().weekday()] == 'Wednesday':
+                api.update_status(tweetlist[ct_twln-1])
+                print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {tweetlist[ct_line]}')
+                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {tweetlist[ct_line]}')
+                quit()
+            else:
+                api.update_status(tweetlist[ct_twln-1])
+                print(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                logger.info(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                quit()
         
         ##### Is there a song stuck in Wednesday's head?
         elif twln == 6 or twln == 7:
@@ -123,15 +134,25 @@ def tweet():
         logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
         quit()
 
-    
-    ##### ##### Comment this out when doing testing. Don't want to post tweets outside the schedule set by the cronjob.
-    # api.update_status(tweetlist[line])
-
-    ##### ##### Prints the tweet to the command line along w/ its position in the tweet list.
-    # print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-    
-    ##### ##### Logs it to the logging file so that it can be checked anytime. Helpful should anything go wrong, which it shouldn't.
-    # logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
 
 # Does exactly what you think it does.
-tweet()
+##tweet()
+
+##### Tweets, but also accounts for TweepErrors and handles them accordingly.
+try:
+    tweet()
+except TweepError as err:
+    if err.api_code == 186:
+        ##### If the
+        print(f'{time.asctime()} - Error 186 - Tweet {twln} of {twln_tot}: Tweet needs to be shortened.')
+        quit()
+    if err.api_code == 187:
+        print(f'{time.asctime()} - Error 187 - Tweet {twln} of {twln_tot}: Duplicate tweet detected. Same thing posted since this time yesterday.')
+        quit()
+    if err.api_code == 215:
+        print(f'{time.asctime()} - Error 215 - Bad authentication data. Please make sure your keys/credentials are correct and try again.')
+        quit()
+    if err.api_code == 401:
+        print(f'{time.asctime()} - Error 401 - Unauthorized. Please make sure your keys/credentials are correct and try again.')
+        quit()
+
