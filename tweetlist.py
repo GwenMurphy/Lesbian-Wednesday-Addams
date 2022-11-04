@@ -358,8 +358,4 @@ conditional_tweetlist = [
     'Halloween\'s not for some time yet. Still, another year closer to death\'s cold embrace.', ##### [3] Go to conditional tweetlist.
     'October. The best month of all.', ##### [4] Go to conditional tweetlist.
     'Thank goth it\'s Wednesday. The best day of the week, though I may be a bit biased on that one.' ##### [5] Go to conditional tweetlist.
-
 ]
-
-
-## west space oak motor crater aim typical exercise frown tray plug awful
