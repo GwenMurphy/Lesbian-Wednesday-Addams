@@ -67,16 +67,28 @@ def tweet():
     if twln < 10:
         ##### ##### Chooses the tweet from the other list.
         ##### Is it Halloween?
-        if datetime.datetime.now().strftime("%d") == 31 and datetime.datetime.now().strftime("%B") == "October" and twln == 2:
-            ct_twln = 2
-            api.update_status(conditional_tweetlist[ct_twln-1])
-            print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-            logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-            quit()
+        if datetime.datetime.now().strftime("%d") == "31" and datetime.datetime.now().strftime("%B") == "October" and twln == 2:
+            if datetime.datetime.now().strftime("%B") == "October":
+                if datetime.datetime.now().strftime("%d") == "31":
+                    ct_twln = 2
+                    api.update_status(conditional_tweetlist[ct_twln-1]) #2nd one [1]
+                    print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                    logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                    quit()
+                else:
+                    api.update_status(conditional_tweetlist[3])
+                    print(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                    logger.info(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                    quit()
+            else:
+                api.update_status(conditional_tweetlist[2]) #3rd one [2]
+                print(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                logger.info(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                quit()
         
         ##### Is it October?
         elif datetime.datetime.now().strftime("%B") == "October" and twln == 4:
-            ct_twln = 4
+            ct_twln = 4 #3
             api.update_status(conditional_tweetlist[ct_twln-1])
             print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
             logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
@@ -84,17 +96,17 @@ def tweet():
         
         ##### Is it Wednesday?
         elif datetime.datetime.today().weekday() == 2:
-            ct_twln = 5
+            ct_twln = 5 #4
             days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
             if days[datetime.datetime.today().weekday()] == 'Wednesday':
-                api.update_status(tweetlist[ct_twln-1])
+                api.update_status(tweetlist[ct_twln-1]) #4
                 print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {tweetlist[ct_line]}')
                 logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {tweetlist[ct_line]}')
                 quit()
             else:
                 api.update_status(tweetlist[ct_twln-1])
-                print(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-                logger.info(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
                 quit()
         
         ##### Is there a song stuck in Wednesday's head?

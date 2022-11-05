@@ -224,6 +224,27 @@ phrases_if_cats_could_talk = [
     f'Human, bring me {random.randint(6,48)} fish, and I want it {random.randint(1,16)} minutes ago!'
 ]
 
+except_maybe_one_thing = [ 
+    'kittens',
+    'cats',
+    'rainy days',
+    'spiders',
+    'scaring the shit out of people',
+    'Halloween'
+]
+
+voldemort_insult = [
+    'he should hide from HowToBasic',
+    'he comes from an egg carton',
+    'the worst Dr Eggman cosplayer the world has ever known',
+    'an off-brand Kojak'
+]
+
+file_extension = [
+    'sh',
+    'py'
+]
+
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
@@ -270,11 +291,11 @@ tweetlist = [
     'On Wednesdays, we wear black.',
     f'{random.choice(sailorscouts)}? I like her.',
     'Cats are homicidal furballs.',
-    'I hate everything.',
+    f'I hate everything... except maybe {random.choice(except_maybe_one_thing)}',
     'I\'ll stop wearing black when they make a darker color.',
     'You severely underestimate my apathy.',
     'Be afraid. Be very afraid.',
-    'Damn, Lestrange. You could\'ve picked a man with a nose at least.',
+    f'Damn, Lestrange. You could\'ve picked a man with a nose at least. Dude looks like {random.choice(voldemort_insult)}.',
     'Still waiting on that full moon.',
     'I heard someone saying that Thing used to be Luke Skywalker\'s hand. I\'m not so sure about that yet.',
     '\'Wednesday\'s child is full of woe.\' Sounds about right.',
@@ -300,7 +321,7 @@ tweetlist = [
     'It\'s frustrating when you\'re in a hurry and things don\'t go to plan.',
     'Chloë Grace Moretz voiced me well.',
     'I can hear that counterfeit Uncle Fester shitting bricks after what I\'ve been hearing.',
-    './wednesday-addams.sh? Do they think I\'m emotionless like Data? I\'ll gladly have a cat, however.',
+    f'./wednesday-addams.{random.choice(file_extension)}? Do they think I\'m emotionless like Data? I\'ll gladly have a cat, however.',
     'Those clouds had better not be mushroom shaped. I enjoy the macarbe, but not that.',
     'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family?',
     'Gay and tired? That sounds like me in the evenings.',
