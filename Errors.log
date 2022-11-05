@@ -143,3 +143,9 @@ Traceback (most recent call last):
   File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 145, in <module>
     if err.args[0][0]['code'] == 186:
 TypeError: string indices must be integers
+Authentication complete.
+Tweet 13 of 113 posted: Pugsley tried to guess what I dreamt about the other night. He guessed it involved Rihanna and some fugazzeta while A View To A Kill played quietly in the background.
+Authentication complete.
+Tweet 87 of 113 posted: When the weather app says it's going to rain and then it doesn't. Ugh...
+Authentication complete.
+Tweet 45 of 113 posted: That moment when you look at Maya Hawke and you feel the last vestiges of your heterosexuality disappearing. Yes. Mother noticed.
