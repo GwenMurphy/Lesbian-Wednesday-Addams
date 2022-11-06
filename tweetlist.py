@@ -1,7 +1,7 @@
 import random
 
 song_list = [
-    ##### ##### ##### ##### ##### Songs in List - 29
+    ##### ##### ##### ##### ##### Songs in List - 32
 
     ##### ##### A-Ha
     'The Living Daylights',
@@ -39,10 +39,13 @@ song_list = [
     ##### ##### Gorillaz
     'Doncamatic',
     'Feel Good Inc.',
+    'The Apprentice - Gorillaz'
     ##### ##### Gustav Holst
     'The Planets',
     ##### ##### Jamiroquai
-    'Alright by Jamiroquai',
+    'Alright - Jamiroquai',
+    ##### ##### Kekra
+    'Rien du tout - Kekra,'
     ##### ##### Lady Gaga
     'Paparazzi',
     ##### ##### Lordi
@@ -65,6 +68,8 @@ song_list = [
     'Night Witches',
     ##### ##### Shivaree
     'Goodnight Moon',
+    ##### ##### Sianna
+    'N\'essaie pas - Sianna'
     ##### ##### Siouxsie and the Banshees
     'Hall of Mirrors',
     ##### ##### Stereophonics
@@ -110,7 +115,7 @@ streetfood = [
 
 celeb = [
     'Karen Gillan',
-    'Ella Balinska',
+    'Ella Balinska', ## She was fantastic in Charlie's Angels.
     'Alexandra Daddario',
     'Daisy Ridley',
     'Kristen Stewart',
@@ -122,7 +127,7 @@ celeb = [
     'Ana de Armas',
     'Léa Seydoux',
     'Kate Beckinsale',
-    'Elizabeth Banks',
+    'Elizabeth Banks', ## Bosley 342 gives off Mom energy.
     'Naomi Scott',
     'Sonequa Martin-Green',
     'Florence Pugh',
@@ -149,9 +154,9 @@ gamingpeeves = [
     'failing a hard mission on GTA Online',
 	f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
     'lag in World of Warships',
-    'my computer bluescreening',
+    'my computer bluescreening', ## It runs on Windows, but at least my home one can have more than 4 tabs opening w/o hanging like my work one does.
     'my game slowing to a crawl because another game decided it wanted to update then and there',
-    'the internet cutting out',
+    'the internet cutting out', ## Only thing worse is slow internet that's just fast enough for an internet connection to be registered.
 ]
 sailorscouts = [
     ##### ##### Outer Sol Senshi
@@ -164,7 +169,7 @@ sailorscouts = [
 ofpeople_insults = [
     'Gary, Indiana',
     'Windows Vista',
-    'Fiat Multipla Mk I',
+    'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
     'Windows ME'
 ]
 
@@ -176,12 +181,12 @@ distancelist = [
 ]
 
 favefilm_scen = [
-    'Charlie\'s Angels (2019)',
+    'Charlie\'s Angels (2019)', ## One of my favoruite films from 2019.
     'Ocean\'s 8',
     'Doctor Strange',
     'Doctor Strange and the Multiverse of Madness',
     'Shang-Chi',
-    'all three John Wick films',
+    'all three John Wick films', ## The Adjudicator needs to be showered in love, imho.
     'Hitchhiker\'s Guide to the Galaxy',
     'Gunpowder Milkshake',
     'Star Trek',
@@ -191,14 +196,14 @@ favefilm_scen = [
 scenarios = [
     'listening to the sounds of someone in tech support yeeting a printer into the stratosphere',
     f'enjoying some {random.choice(streetfood)} as the sun sets',
-    'taking the piss out of Windows Vista on account of how monumentally shit it was',
+    'taking the piss out of Windows Vista on account of how monumentally shit it was', ## SideshowBobShuddering.mp4
     'watching a good film in the cinema',
     'gaming for hours on end',
     f'watching {random.choice(favefilm_scen)} for the twentieth time',
     'enjoying that feeling when code runs the way it should on the first try',
     'messing with people by leaving dice at the zoo so they think we\'re playing Jumanji',
-    'binging Star Trek until the early hours',
-    'watching Lord of the Rings in one sitting',
+    'binging Star Trek until the early hours', ## We need more Xaheans. They are adorable.
+    'watching Lord of the Rings in one sitting', ## Takes 12 hours.
     'watching the Addams Family with a inkling that the Droste effect is in motion',
     'introducing them to Sailor Moon (the Japanese dub w/ English subtitles is the best)',
     'making Zombocom references every time a welcome sign is spotted',
@@ -245,6 +250,11 @@ file_extension = [
     'py'
 ]
 
+dentistcomments = [
+    'It satisfies me to no end when such circumstances arise that cause it to be rescheduled for a later date',
+    'I could not think of a worse way to spend my time',
+    'Half the equipment sounds like those mandrakes from Harry Potter'
+]
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
@@ -267,7 +277,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 113 • Generic Tweets
+    ##### ##### Tweets 12 to 114 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -310,9 +320,9 @@ tweetlist = [
     f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
     'Sometimes I get bored enough that I see no other thing to do than to look through memes for hours on end. The creativity is... impressive.',
     f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
-    'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee.',
+    f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750/997)/100}',
     'I wonder whose idea was it to call bras \'over the shoulder boulder holders\'.',
-    'I don\'t like dentists.',
+    f'I don\'t like dentists. {random.choice(dentistcomments)}.',
     'Sometimes, there\'s no better thing than a lie in.',
     'I want nothing more than to just chill on some days. Today seems to be one of them.',
     'I can\'t tell whether it\'s going to rain or not some days.',
@@ -339,11 +349,11 @@ tweetlist = [
     'Could you imagine if Uncle Fester went to an anime convention? They\'d say One Punch Man let himself go.',
     'I hate it when I want a lie in and something wakes me up.',
     'I want a lie in.',
-    'Spotted a black cat out of the window. It\'s probably thinking about purrgatory.',
+    f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
     f'What in the fresh fuck is this Barbie thing? I\'ve sat there for {random.randint(1, 9)} hours trying to understand it only to still be confused.',
     'I forget to sleep sometimes, and I always end up paying for it the next day, moreso if I rise early.',
-    'When the weather app says it\'s going to rain and then it doesn\'t. Ugh...',
+    f'When the weather app says it\'s going to rain and then it doesn\'t. Ugh... {random.randint(60,90)}% chance, my ass.',
     'A litle but of sudden rain is nice.',
     'I like Fridays too.',
     'I tried to upgrade my computer once but it hung at the wrong moment. The end result was a catastophe that required reinstalling the operating system and half a day of recovery. My plans for sleeping were fucked. Must\'ve been four in the morning by the time everything was sorted again.',
@@ -362,15 +372,16 @@ tweetlist = [
     'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
     'I want something to eat, but I don\'t know what I want.',
     'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it.',
-    'Sometimes I get halfway through the day and mentally I go back to bed.',
-    'They had men doing construction work out the window once. At least their radio choices were decent.',
-    'Been playing a lot of GTA V recently. I like the chaos.',
+    'Sometimes I get halfway through the day and mentally I go back to bed. ',
+    'They had men doing construction work out the window once. At least their radio choices were  decent.',
+    f'Been playing a lot of GTA V recently. I like the chaos. I\'d say the odds of summoning Loki Odinson are {random.randint(8750,10000)/100}%.',
     f'I\'m not surprised that lettuce won. I give myself {random.randint(2, 30)} days before I have some surreal dream about a civilization of sentient pieces of lettuce.',
     'I\'ve been playing games so much I expect Cara Delevingne\'s voice to be heard every time I turn the radio on.',
     'I tried brussels sprouts once. No thanks. What madman brought those things into existence?',
     'No idea what I wan\'t to do right now.',
     'Asking myself whether I should make myself a cup of tea or wait until later.',
-    'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC.'
+    f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000/3000)/1000} seconds after the doors close.',
+    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.rantint(110,145)} decibels.'
 ]
 
 conditional_tweetlist = [
