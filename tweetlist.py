@@ -255,6 +255,7 @@ dentistcomments = [
     'I could not think of a worse way to spend my time',
     'Half the equipment sounds like those mandrakes from Harry Potter'
 ]
+
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
@@ -320,7 +321,7 @@ tweetlist = [
     f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
     'Sometimes I get bored enough that I see no other thing to do than to look through memes for hours on end. The creativity is... impressive.',
     f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
-    f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750/997)/100}',
+    f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750,997)/100}',
     'I wonder whose idea was it to call bras \'over the shoulder boulder holders\'.',
     f'I don\'t like dentists. {random.choice(dentistcomments)}.',
     'Sometimes, there\'s no better thing than a lie in.',
@@ -380,8 +381,8 @@ tweetlist = [
     'I tried brussels sprouts once. No thanks. What madman brought those things into existence?',
     'No idea what I wan\'t to do right now.',
     'Asking myself whether I should make myself a cup of tea or wait until later.',
-    f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000/3000)/1000} seconds after the doors close.',
-    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.rantint(110,145)} decibels.'
+    f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
+    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.'
 ]
 
 conditional_tweetlist = [
