@@ -157,3 +157,91 @@ Authentication complete.
 Tweet 48 of 113 posted: That feeling you get when you take your bra off after a long day. I can agree with that.
 Authentication complete.
 Tweet 94 of 113 posted: A wig from a bargain store and a pinafore is not an ideal cosplay, though kudos for the effort at least.
+Authentication complete.
+Tweet 104 of 113 posted: I'm thinking about food. Odds are it's because I can smell it cooking. I hope whoever cooked it hasn't burned it.
+Authentication complete.
+Tweet 53 of 113 posted: There's nothing worse than a bad internet connection, especially when I'm trying to game. 9.035Mbps? Seriously?
+Authentication complete.
+Tweet 76 of 113 posted: I overheard someone saying that some company's headquarters was their version of hell. I can only assume they work in tech support, so it's fortunate I don't bother with printers. Sounds like more trouble than they're worth.
+Authentication complete.
+Tweet 18 of 113 posted: Thing's had a guess at what I dreamt of the other day. "A day out with Kate Beckinsale, watching Lord of the Rings in one sitting" was what he wrote down.
+Authentication complete.
+Tweet 84 of 113 posted: I doubt Father could handle a trip to France. I can hear "Tish, that's French!" from 68 kilometres away.
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 155, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 142, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+187 - Status is a duplicate.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 157, in <module>
+    if err.args[0][0][err] == '186':
+TypeError: string indices must be integers
+Authentication complete.
+Tweet 44 of 113 posted: Okay, I admit it. I like Billie Eilish.
+Authentication complete.
+Tweet 25 of 113 posted: I can't tell of there's a thunderstorm coming or Pugsley's had beans again. 9 cans of air freshener won't be enough if it's not thunder.
+Authentication complete.
+Tweet 14 of 113 posted: I'm craving acarejé right now. Where's Dr Strange and that sling ring of his? It'll save me having to walk to get the food.
+Authentication complete.
+Tweet 63 of 113 posted: Chloë Grace Moretz voiced me well.
+Authentication complete.
+Tweet 13 of 113 posted: Pugsley tried to guess what I dreamt about the other night. He guessed it involved Emma Watson and some salteñas while Heavy Fuel played quietly in the background.
+Authentication complete.
+Tweet 96 of 113 posted: What is this 'uwu' energy people keep mentioning? I'm aware kittens possess that energy, but still...
+Authentication complete.
+Tweet 91 of 113 posted: I think I'm the most prepared in the Addams clan. Pugsley's guess of 872 million of them was quite the overstatement.
+Authentication complete.
+Tweet 79 of 113 posted: A friend of mine told me I should cosplay as Sailor Saturn. I'll give it some thought. She's my favourite sailor scout, after all.
+Authentication complete.
+Tweet 100 of 113 posted: It was foggy this morning, and I liked it. Now it's sunny... damn it.
+Authentication complete.
+Tweet 6 of 113 posted: Why do I have Hard Rock Hallelujah stuck in my head all of a sudden?
+Authentication complete.
+Tweet 67 of 113 posted: Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family?
+Authentication complete.
+Tweet 106 of 113 posted: They had men doing construction work out the window once. At least their radio choices were decent.
+Authentication complete.
+Tweet 26 of 113 posted: Ah, what I would not give for Alexandra Daddario to look me in the eye and say 'Cara mia'.
+Authentication complete.
+Tweet 17 of 113 posted: There's nothing better than a peaceful night, a gentle breeze and a temperature of 16°C
+Authentication complete.
+Tweet 78 of 113 posted: I've got the music from Sailor Moon stuck in my head. Not gonna lie, though, I like it.
+Authentication complete.
+Tweet 102 of 113 posted: It's colder than I expected it to be today. A reminder of the cold embrace of death.
+Authentication complete.
+Tweet 10 of 113 posted: Mother's been trying to guess who has been on my mind today. Úrsula Corberó was her latest guess.
+Authentication complete.
+Tweet 87 of 113 posted: When the weather app says it's going to rain and then it doesn't. Ugh...
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 155, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 142, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+187 - Status is a duplicate.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 157, in <module>
+    if err.args[0][0][err] == '186':
+TypeError: string indices must be integers
