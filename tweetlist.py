@@ -115,7 +115,7 @@ streetfood = [
     ##### Peru
     'anticucho',
     'ceviche',
-    'picarones'
+    'picarones',
 
     ##### ##### Asia
     ##### India
@@ -123,15 +123,27 @@ streetfood = [
     'parathas',
     'chole bhature',
     'nihari',
-    'seekh kebabs'
+    'seekh kebabs',
+    'aloo tikki',
+    ##### Indonesia
+
     ##### Japan
     'takoyaki',
     'okonomiyaki',
     'kushikatsu',
     'udon',
     'yakitori',
+    ##### Philippines
+    
+    ##### Taiwan
+
     ##### Thailand
-    'tom yum',
+    'tom yum'
+    ##### Singapore
+    
+    ##### South Korea
+    
+    ##### Vietnam
 
     ##### ##### Africa
 
@@ -200,8 +212,7 @@ ofpeople_insults = [
     'Gary, Indiana',
     'Windows Vista',
     'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
-    'Windows ME',
-    ''
+    'Windows ME'
 ]
 
 distancelist = [
@@ -266,7 +277,8 @@ except_maybe_one_thing = [
     'rainy days',
     'spiders',
     'scaring the shit out of people',
-    'Halloween'
+    'Halloween',
+    'some good food'
 ]
 
 voldemort_insult = [
