@@ -160,6 +160,11 @@ gamingpeeves = [
 ]
 sailorscouts = [
     ##### ##### Outer Sol Senshi
+    'Sailor Mercury',
+    'Sailor Venus',
+    'Sailor Moon',
+    'Sailor Mars',
+    'Sailor Jupiter',
     'Sailor Saturn',
     'Sailor Uranus',
     'Sailor Neptune',
@@ -170,7 +175,8 @@ ofpeople_insults = [
     'Gary, Indiana',
     'Windows Vista',
     'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
-    'Windows ME'
+    'Windows ME',
+    ''
 ]
 
 distancelist = [
@@ -256,6 +262,15 @@ dentistcomments = [
     'Half the equipment sounds like those mandrakes from Harry Potter'
 ]
 
+insults = [
+    'were the Human equivalent of participation awards.',
+    'were impossible to underestimate.',
+    'continued to meet everyone\'s expectations.',
+    'made everyone wish they were better strangers.',
+    'could be used as a bad example.',
+    'needed to apologise to the tree creating the oxygen they wasted on that puerile, underdramatized play that lacked anything resembling the Aristotelian unities.'
+]
+
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
@@ -278,7 +293,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 114 • Generic Tweets
+    ##### ##### Tweets 12 to 115 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -329,6 +344,7 @@ tweetlist = [
     'I can\'t tell whether it\'s going to rain or not some days.',
     'I can almost hear people watching the Addams Family films everywhere. So this is what the Droste effect is. Interesting.',
     f'Man, those two at Camp Chippewa were the {random.choice(ofpeople_insults)} of people.',
+    f'Those two at Camp Chippewa {random.choice(insults)}',
     'It\'s frustrating when you\'re in a hurry and things don\'t go to plan.',
     'Chloë Grace Moretz voiced me well.',
     'I can hear that counterfeit Uncle Fester shitting bricks after what I\'ve been hearing.',
