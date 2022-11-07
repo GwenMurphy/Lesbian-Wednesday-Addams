@@ -39,13 +39,13 @@ song_list = [
     ##### ##### Gorillaz
     'Doncamatic',
     'Feel Good Inc.',
-    'The Apprentice - Gorillaz'
+    'The Apprentice - Gorillaz',
     ##### ##### Gustav Holst
     'The Planets',
     ##### ##### Jamiroquai
     'Alright - Jamiroquai',
     ##### ##### Kekra
-    'Rien du tout - Kekra,'
+    'Rien du tout - Kekra',
     ##### ##### Lady Gaga
     'Paparazzi',
     ##### ##### Lordi
@@ -69,7 +69,7 @@ song_list = [
     ##### ##### Shivaree
     'Goodnight Moon',
     ##### ##### Sianna
-    'N\'essaie pas - Sianna'
+    'N\'essaie pas - Sianna',
     ##### ##### Siouxsie and the Banshees
     'Hall of Mirrors',
     ##### ##### Stereophonics
