@@ -1,5 +1,16 @@
 import random
 
+as_useful_as_a = [
+    'a catflap on a submarine.',
+    'a chocolate teapot in the equatorial regions of Venus.',
+    'a glass hammer.',
+    'handles on a snowball.',
+    'ejection seats on a helicopter.',
+    'a concrete parachute.',
+    'an ashtray on a bike.'
+    'red lights in GTA.'
+]
+
 song_list = [
     ##### ##### ##### ##### ##### Songs in List - 32
 
@@ -39,13 +50,13 @@ song_list = [
     ##### ##### Gorillaz
     'Doncamatic',
     'Feel Good Inc.',
-    'The Apprentice - Gorillaz'
+    'The Apprentice - Gorillaz',
     ##### ##### Gustav Holst
     'The Planets',
     ##### ##### Jamiroquai
     'Alright - Jamiroquai',
     ##### ##### Kekra
-    'Rien du tout - Kekra,'
+    'Rien du tout - Kekra',
     ##### ##### Lady Gaga
     'Paparazzi',
     ##### ##### Lordi
@@ -69,7 +80,7 @@ song_list = [
     ##### ##### Shivaree
     'Goodnight Moon',
     ##### ##### Sianna
-    'N\'essaie pas - Sianna'
+    'N\'essaie pas - Sianna',
     ##### ##### Siouxsie and the Banshees
     'Hall of Mirrors',
     ##### ##### Stereophonics
@@ -174,6 +185,11 @@ gamingpeeves = [
 ]
 sailorscouts = [
     ##### ##### Outer Sol Senshi
+    'Sailor Mercury',
+    'Sailor Venus',
+    'Sailor Moon',
+    'Sailor Mars',
+    'Sailor Jupiter',
     'Sailor Saturn',
     'Sailor Uranus',
     'Sailor Neptune',
@@ -184,7 +200,8 @@ ofpeople_insults = [
     'Gary, Indiana',
     'Windows Vista',
     'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
-    'Windows ME'
+    'Windows ME',
+    ''
 ]
 
 distancelist = [
@@ -270,6 +287,18 @@ dentistcomments = [
     'Half the equipment sounds like those mandrakes from Harry Potter'
 ]
 
+cch_insults = [
+    'were the Human equivalent of participation awards.',
+    'were impossible to underestimate.',
+    'continued to meet everyone\'s expectations.',
+    'made everyone wish they were better strangers.',
+    'could be used as a bad example.',
+    'needed to apologise to the tree creating the oxygen they wasted on that puerile, underdramatized play that lacked anything resembling the Aristotelian unities. In short, it was shit.',
+    'were unique in such that being with them was like wearing wet socks.',
+    'seemed like they were unable to pour water out of a boot with the instructions on the heel.',
+    f'were about as useful as {random.choice(as_useful_as_a)}'
+]
+
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
@@ -292,7 +321,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 114 • Generic Tweets
+    ##### ##### Tweets 12 to 115 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -300,7 +329,7 @@ tweetlist = [
     f'Where\'s a thunderstorm when you need one? It\'s been at least {random.randint(3,8)} days since the last one.',
     f'There\'s nothing better than a peaceful night, a gentle breeze and a temperature of {random.randint(16,22)}°C',
     f'Thing\'s had a guess at what I dreamt of the other day. "A day out with {random.choice(celeb)}, {random.choice(scenarios)}" was what he wrote down.',
-    f'Someone just tried to guess what\'s on my mind now. They said, "{random.choice(celeb)}, a serving of {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
+    f'Someone just guessed what\'s on my mind now. They said, "{random.choice(celeb)}, some {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
     f'What I need is a sling ring and some highly advanced technology so that I can give Sailor Pluto some {random.choice(streetfood)} and a much needed hug.',
     f'Sometimes, my internet wants to run like it was made in {random.randint(1327,1933)}.',
     f'Trying to get VS Code, WSL and GitHub to play ball together\'s a pain in the ass. At least {random.randint(95,175)}% pure frustration.',
@@ -343,6 +372,7 @@ tweetlist = [
     'I can\'t tell whether it\'s going to rain or not some days.',
     'I can almost hear people watching the Addams Family films everywhere. So this is what the Droste effect is. Interesting.',
     f'Man, those two at Camp Chippewa were the {random.choice(ofpeople_insults)} of people.',
+    f'Those two at Camp Chippewa {random.choice(cch_insults)}',
     'It\'s frustrating when you\'re in a hurry and things don\'t go to plan.',
     'Chloë Grace Moretz voiced me well.',
     'I can hear that counterfeit Uncle Fester shitting bricks after what I\'ve been hearing.',
@@ -385,7 +415,7 @@ tweetlist = [
     'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written.'
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
     'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
-    'I want something to eat, but I don\'t know what I want.',
+    f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
     'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it.',
     'Sometimes I get halfway through the day and mentally I go back to bed. ',
     'They had men doing construction work out the window once. At least their radio choices were  decent.',
