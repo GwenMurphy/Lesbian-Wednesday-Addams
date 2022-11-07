@@ -107,6 +107,20 @@ streetfood = [
     'picarones'
 
     ##### ##### Asia
+    ##### India
+    'chaat',
+    'parathas',
+    'chole bhature',
+    'nihari',
+    'seekh kebabs'
+    ##### Japan
+    'takoyaki',
+    'okonomiyaki',
+    'kushikatsu',
+    'udon',
+    'yakitori',
+    ##### Thailand
+    'tom yum',
 
     ##### ##### Africa
 
