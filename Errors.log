@@ -245,3 +245,38 @@ Traceback (most recent call last):
   File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 157, in <module>
     if err.args[0][0][err] == '186':
 TypeError: string indices must be integers
+Authentication complete.
+Tweet 77 of 114 posted: I'm still getting over Debbie's choice to use pastels. Like, seriously?
+Authentication complete.
+Tweet 53 of 114 posted: There's nothing worse than a bad internet connection, especially when I'm trying to game. 4.141Mbps? Seriously?
+Authentication complete.
+Tweet 69 of 114 posted: Sometimes I just want to sleep after a long day.
+Authentication complete.
+Tweet 72 of 114 posted: I sometimes wish I was in the Townsend Agency. Someone should make fanfiction of that, come to think of it. The Addams Family x 2019 Charlie's Angels would be an interesting combination
+Authentication complete.
+Tweet 35 of 114 posted: I hate everything... except maybe spiders
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 155, in <module>
+    tweet()
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 142, in tweet
+    api.update_status(tweetlist[line])
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 1142, in update_status
+    return self.request(
+  File "/home/wednesday-addams/.local/lib/python3.9/site-packages/tweepy/api.py", line 265, in request
+    raise Forbidden(resp)
+tweepy.errors.Forbidden: 403 Forbidden
+186 - Tweet needs to be a bit shorter.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 157, in <module>
+    if err.args[0][0]['code'] == '186':
+TypeError: string indices must be integers
+Authentication complete.
+Tweet 30 of 115 posted: A spider is a girl's best friend.
+Authentication complete.
+Tweet 33 of 115 posted: Sailor Saturn? I like her.
