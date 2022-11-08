@@ -1,5 +1,7 @@
 import random
 
+gaytired = random.randint(1,200)/10
+
 as_useful_as_a = [
     'a catflap on a submarine.',
     'a chocolate teapot in the equatorial regions of Venus.',
@@ -311,6 +313,22 @@ cch_insults = [
     f'were about as useful as {random.choice(as_useful_as_a)}'
 ]
 
+namesforbras = [
+	'over the shoulder boulder holders',
+	'boob jail',
+	'booby traps'
+]
+
+sto_women = [
+	'Tiaru Jarok'
+]
+
+afraid_examples = [
+	'Like someone in tech support when confronted with a printer.',
+	'Like most people playing Resident Evil with the lights off.',
+	'Like someone in tech support when an update fucks up.'
+]
+
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
@@ -346,7 +364,7 @@ tweetlist = [
     f'Sometimes, my internet wants to run like it was made in {random.randint(1327,1933)}.',
     f'Trying to get VS Code, WSL and GitHub to play ball together\'s a pain in the ass. At least {random.randint(95,175)}% pure frustration.',
     f'Why do people make doing certain processes hard? I swear it ends up taking {random.randint(2,6)} hours to do something that should take minutes.',
-    'Woe to the Republic.',
+    f'Woe to the Republic. First republic that comes to mind however\'s the Romulan Republic from STO. {random.choice(sto_women)}... phwaor. Guess that\'s what I get for being a Trekkie.',
     f'I can\'t tell of there\'s a thunderstorm coming or Pugsley\'s had beans again. {random.randint(2,13)} cans of air freshener won\'t be enough if it\'s not thunder.',
     f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
@@ -360,7 +378,7 @@ tweetlist = [
     f'I hate everything... except maybe {random.choice(except_maybe_one_thing)}',
     'I\'ll stop wearing black when they make a darker color.',
     'You severely underestimate my apathy.',
-    'Be afraid. Be very afraid.',
+    f'Be afraid. Be very afraid. {random.choice(afraid_examples)}',
     f'Damn, Lestrange. You could\'ve picked a man with a nose at least. Dude looks like {random.choice(voldemort_insult)}.',
     'Still waiting on that full moon.',
     'I heard someone saying that Thing used to be Luke Skywalker\'s hand. I\'m not so sure about that yet.',
@@ -377,7 +395,7 @@ tweetlist = [
     'Sometimes I get bored enough that I see no other thing to do than to look through memes for hours on end. The creativity is... impressive.',
     f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
     f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750,997)/100}',
-    'I wonder whose idea was it to call bras \'over the shoulder boulder holders\'.',
+    f'I wonder whose idea was it to call bras \'{namesforbras}\'.',
     f'I don\'t like dentists. {random.choice(dentistcomments)}.',
     'Sometimes, there\'s no better thing than a lie in.',
     'I want nothing more than to just chill on some days. Today seems to be one of them.',
@@ -391,7 +409,7 @@ tweetlist = [
     f'./wednesday-addams.{random.choice(file_extension)}? Do they think I\'m emotionless like Data? I\'ll gladly have a cat, however.',
     'Those clouds had better not be mushroom shaped. I enjoy the macarbe, but not that.',
     'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family?',
-    'Gay and tired? That sounds like me in the evenings.',
+    f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {tired}% tired.',
     'Sometimes I just want to sleep after a long day.',
     '"Men is too headache." I couldn\'t agree more.',
     f'If cats could talk, I wonder what they\'d say. Probably something like "{random.choice(phrases_if_cats_could_talk)}"',
@@ -405,7 +423,7 @@ tweetlist = [
     'A friend of mine told me I should cosplay as Sailor Saturn. I\'ll give it some thought. She\'s my favourite sailor scout, after all.',
     'Could you imagine if Uncle Fester went to an anime convention? They\'d say One Punch Man let himself go.',
     'I hate it when I want a lie in and something wakes me up.',
-    'I want a lie in.',
+    'I want a lie in. I'm {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
     f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
     f'What in the fresh fuck is this Barbie thing? I\'ve sat there for {random.randint(1, 9)} hours trying to understand it only to still be confused.',
@@ -417,8 +435,8 @@ tweetlist = [
     f'I think I\'m the most prepared in the Addams clan. Pugsley\'s guess of {random.randint(1, 1000)} million of them was quite the overstatement.',
     'Why did they choose November 23rd? I\'d\'ve released it on October 31st. Halloween\'s a much better date.',
     'I think Jenna Ortega will do well as Wednesday.',
-    'A wig from a bargain store and a pinafore is not an ideal cosplay, though kudos for the effort at least.',
-    f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days...',
+    f'A wig from a bargain store and a pinafore is not an ideal cosplay - it\'s more like {random.randint(1,300)/10}/10 - though kudos for the effort at least.',
+    f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
     'What is this \'uwu\' energy people keep mentioning? I\'m aware kittens possess that energy, but still...',
     'Fuck. It\'s sunny. Where\'s my umbrella?',
     'It\'s a bit cold outside.',
@@ -428,7 +446,7 @@ tweetlist = [
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
     'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
     f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
-    'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it.',
+    f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there's a {random.randint(35,65)}% chance they have.',
     'Sometimes I get halfway through the day and mentally I go back to bed. ',
     'They had men doing construction work out the window once. At least their radio choices were  decent.',
     f'Been playing a lot of GTA V recently. I like the chaos. I\'d say the odds of summoning Loki Odinson are {random.randint(8750,10000)/100}%.',
@@ -436,7 +454,7 @@ tweetlist = [
     'I\'ve been playing games so much I expect Cara Delevingne\'s voice to be heard every time I turn the radio on.',
     'I tried brussels sprouts once. No thanks. What madman brought those things into existence?',
     'No idea what I wan\'t to do right now.',
-    'Asking myself whether I should make myself a cup of tea or wait until later.',
+    f'Asking myself whether I should make myself a cup of tea or wait until later. I give it {random.randint(30,150)} minutes before the urge for a cup of tea becomes overwhelming.',
     f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
     f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.'
 ]
