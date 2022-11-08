@@ -7,5 +7,4 @@ Errors.log
 __pycache__/*
 Logs/*
 UpdateLogs/*
-
-.vscode/settings.json
+.vscode/*
