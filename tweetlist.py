@@ -187,11 +187,11 @@ celeb = [
 ]
 
 gamingpeeves = [
-	'griefers on GTA Online',
-	'lag on GTA Online',
+    'griefers on GTA Online',
+    'lag on GTA Online',
     f'failing a timed mission on GTA Online by something like {random.randint(1,1000)/1000} seconds',
     'failing a hard mission on GTA Online',
-	f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
+    f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
     'lag in World of Warships',
     'my computer bluescreening', ## It runs on Windows, but at least my home one can have more than 4 tabs opening w/o hanging like my work one does.
     'my game slowing to a crawl because another game decided it wanted to update then and there',
