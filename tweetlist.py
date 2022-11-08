@@ -409,7 +409,7 @@ tweetlist = [
     f'./wednesday-addams.{random.choice(file_extension)}? Do they think I\'m emotionless like Data? I\'ll gladly have a cat, however.',
     'Those clouds had better not be mushroom shaped. I enjoy the macarbe, but not that.',
     'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family?',
-    f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {tired}% tired.',
+    f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {gaytired}% tired.',
     'Sometimes I just want to sleep after a long day.',
     '"Men is too headache." I couldn\'t agree more.',
     f'If cats could talk, I wonder what they\'d say. Probably something like "{random.choice(phrases_if_cats_could_talk)}"',
@@ -423,7 +423,7 @@ tweetlist = [
     'A friend of mine told me I should cosplay as Sailor Saturn. I\'ll give it some thought. She\'s my favourite sailor scout, after all.',
     'Could you imagine if Uncle Fester went to an anime convention? They\'d say One Punch Man let himself go.',
     'I hate it when I want a lie in and something wakes me up.',
-    'I want a lie in. I'm {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
+    f'I want a lie in. I\'m {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
     f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
     f'What in the fresh fuck is this Barbie thing? I\'ve sat there for {random.randint(1, 9)} hours trying to understand it only to still be confused.',
@@ -446,7 +446,7 @@ tweetlist = [
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
     'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
     f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
-    f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there's a {random.randint(35,65)}% chance they have.',
+    f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there\'s a {random.randint(35,65)}% chance they have.',
     'Sometimes I get halfway through the day and mentally I go back to bed. ',
     'They had men doing construction work out the window once. At least their radio choices were  decent.',
     f'Been playing a lot of GTA V recently. I like the chaos. I\'d say the odds of summoning Loki Odinson are {random.randint(8750,10000)/100}%.',
@@ -457,6 +457,8 @@ tweetlist = [
     f'Asking myself whether I should make myself a cup of tea or wait until later. I give it {random.randint(30,150)} minutes before the urge for a cup of tea becomes overwhelming.',
     f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
     f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.'
+
+
 ]
 
 conditional_tweetlist = [
