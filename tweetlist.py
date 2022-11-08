@@ -356,7 +356,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 115 • Generic Tweets
+    ##### ##### Tweets 12 to 116 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -447,7 +447,7 @@ tweetlist = [
     'It\'s a bit cold outside.',
     'It\'s quite a pain in the ass when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
     'It was foggy this morning, and I liked it. Now it\'s sunny... damn it.',
-    'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written.'
+    'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written.',
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
     'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
     f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
