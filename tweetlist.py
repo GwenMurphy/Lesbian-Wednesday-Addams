@@ -314,19 +314,19 @@ cch_insults = [
 ]
 
 namesforbras = [
-	'over the shoulder boulder holders',
-	'boob jail',
-	'booby traps'
+    'over the shoulder boulder holders',
+    'boob jail',
+    'booby traps'
 ]
 
 sto_women = [
-	'Tiaru Jarok'
+    'Tiaru Jarok'
 ]
 
 afraid_examples = [
-	'Like someone in tech support when confronted with a printer.',
-	'Like most people playing Resident Evil with the lights off.',
-	'Like someone in tech support when an update fucks up.'
+    'Like someone in tech support when confronted with a printer.',
+    'Like most people playing Resident Evil with the lights off.',
+    'Like someone in tech support when an update fucks up.'
 ]
 
 tweetlist = [
