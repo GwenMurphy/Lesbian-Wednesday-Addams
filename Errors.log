@@ -306,3 +306,8 @@ Authentication complete.
 Tweet 68 of 115 posted: Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family?
 Authentication complete.
 Tweet 17 of 115 posted: There's nothing better than a peaceful night, a gentle breeze and a temperature of 16°C
+Authentication complete.
+Traceback (most recent call last):
+  File "/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/tweetbot.py", line 28, in <module>
+    os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/Logs/')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/Logs/'
