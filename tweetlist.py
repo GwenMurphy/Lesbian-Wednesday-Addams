@@ -2,6 +2,12 @@ import random
 
 gaytired = random.randint(1,200)/10
 
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+##### The arrays below help to randomise the strings in the #####
+##### master array (tweetlist) located at the bottom of     #####
+##### this Python file.                                     #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
 as_useful_as_a = [
     'a catflap on a submarine.',
     'a chocolate teapot in the equatorial regions of Venus.',
@@ -11,6 +17,130 @@ as_useful_as_a = [
     'a concrete parachute.',
     'an ashtray on a bike.'
     'red lights in GTA.'
+]
+
+bad_os = [
+    'Windows ME',
+    'Windows Vista'
+]
+
+cch_insults = [
+    'were the Human equivalent of participation awards.',
+    'were impossible to underestimate.',
+    'continued to meet everyone\'s expectations.',
+    'made everyone wish they were better strangers.',
+    'could be used as a bad example.',
+    'needed to apologise to the tree creating the oxygen they wasted on that puerile, underdramatized play that lacked anything resembling the Aristotelian unities. In short, it was shit.',
+    'were unique in such that being with them was like wearing wet socks.',
+    'seemed like they were unable to pour water out of a boot with the instructions on the heel.',
+    f'were about as useful as {random.choice(as_useful_as_a)}'
+]
+
+celeb = [
+    'Karen Gillan',
+    'Ella Balinska', ## She was fantastic in Charlie's Angels.
+    'Alexandra Daddario',
+    'Daisy Ridley',
+    'Kristen Stewart',
+    'Aura Garrido', ## Amelia Folch in El Ministerio del Tiempo
+    'Úrsula Corberó', ## Tokyo in Money Heist
+    'Emilia Clarke',
+    'Tessa Thompson',
+    'Scarlett Johansson',
+    'Ana de Armas',
+    'Léa Seydoux',
+    'Kate Beckinsale',
+    'Elizabeth Banks', ## Bosley 342 gives off Mom energy.
+    'Naomi Scott',
+    'Sonequa Martin-Green',
+    'Florence Pugh',
+    'Evanna Lynch',
+    'Emma Watson',
+    'Maya Hawke',
+    'Chloë Grace Moretz', ## Creator's transition goals.
+    'Nathalie Emannuel',
+    'Dominique Tipper',
+    'Frankie Adams',
+    'Taylor Swift',
+    'Billie Piper',
+    'Jodie Whittaker',
+    'Margot Robbie',
+    'Rihanna',
+    'Awkwafina',
+    'Anne Hathaway'
+]
+
+dentistcomments = [
+    'It satisfies me to no end when such circumstances arise that cause it to be rescheduled for a later date',
+    'I could not think of a worse way to spend my time',
+    'Half the equipment sounds like those mandrakes from Harry Potter'
+]
+
+distancelist = [
+    'half an acre',
+    'half a mile',
+    f'{random.randint(3, 81)} kilometres',
+    f'{random.randint(2, 51)} miles'
+]
+
+except_maybe_one_thing = [ 
+    'kittens',
+    'cats',
+    'rainy days',
+    'spiders',
+    'scaring the shit out of people',
+    'Halloween',
+    'some good food'
+]
+
+favefilm_scen = [
+    'Charlie\'s Angels (2019)', ## One of my favoruite films from 2019.
+    'Ocean\'s 8',
+    'Doctor Strange',
+    'Doctor Strange and the Multiverse of Madness',
+    'Shang-Chi',
+    'all three John Wick films', ## The Adjudicator needs to be showered in love, imho.
+    'Hitchhiker\'s Guide to the Galaxy',
+    'Gunpowder Milkshake',
+    'Star Trek',
+    'Black Widow'
+]
+
+gamingpeeves = [
+    'griefers on GTA Online',
+    'lag on GTA Online',
+    f'failing a timed mission on GTA Online by something like {random.randint(1,1000)/1000} seconds',
+    'failing a hard mission on GTA Online',
+    f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
+    'lag in World of Warships',
+    'my computer bluescreening', ## It runs on Windows, but at least my home one can have more than 4 tabs opening w/o hanging like my work one does.
+    'my game slowing to a crawl because another game decided it wanted to update then and there',
+    'the internet cutting out', ## Only thing worse is slow internet that's just fast enough for an internet connection to be registered.
+]
+
+ofpeople_insults = [
+    'Gary, Indiana',
+    'Windows Vista',
+    'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
+    'Windows ME'
+]
+
+phrases_if_cats_could_talk = [
+    'Puny mortals, I summon thee!',
+    f'Human, bring me {random.randint(6,48)} fish, and I want it {random.randint(1,16)} minutes ago!'
+]
+
+sailorscouts = [
+    ##### ##### Outer Sol Senshi
+    'Sailor Mercury',
+    'Sailor Venus',
+    'Sailor Moon',
+    'Sailor Mars',
+    'Sailor Jupiter',
+    'Sailor Saturn',
+    'Sailor Uranus',
+    'Sailor Neptune',
+    'Sailor Pluto'
 ]
 
 song_list = [
@@ -89,6 +219,15 @@ song_list = [
     'Handbags and Gladrags'
 ]
 
+sto_women = [
+    'Rinna Khev',
+    'Satra',
+    'Syvith',
+    'Tiaru Jarok',
+    'T\'Manda',
+    'T\'Par'
+]
+
 streetfood = [
     ##### ##### Europe
     
@@ -152,91 +291,6 @@ streetfood = [
     ##### ##### Oceania
 ]
 
-celeb = [
-    'Karen Gillan',
-    'Ella Balinska', ## She was fantastic in Charlie's Angels.
-    'Alexandra Daddario',
-    'Daisy Ridley',
-    'Kristen Stewart',
-    'Aura Garrido', ## Amelia Folch in El Ministerio del Tiempo
-    'Úrsula Corberó', ## Tokyo in Money Heist
-    'Emilia Clarke',
-    'Tessa Thompson',
-    'Scarlett Johansson',
-    'Ana de Armas',
-    'Léa Seydoux',
-    'Kate Beckinsale',
-    'Elizabeth Banks', ## Bosley 342 gives off Mom energy.
-    'Naomi Scott',
-    'Sonequa Martin-Green',
-    'Florence Pugh',
-    'Evanna Lynch',
-    'Emma Watson',
-    'Maya Hawke',
-    'Chloë Grace Moretz', ## Creator's transition goals.
-    'Nathalie Emannuel',
-    'Dominique Tipper',
-    'Frankie Adams',
-    'Taylor Swift',
-    'Billie Piper',
-    'Jodie Whittaker',
-    'Margot Robbie',
-    'Rihanna',
-    'Awkwafina',
-    'Anne Hathaway'
-]
-
-gamingpeeves = [
-    'griefers on GTA Online',
-    'lag on GTA Online',
-    f'failing a timed mission on GTA Online by something like {random.randint(1,1000)/1000} seconds',
-    'failing a hard mission on GTA Online',
-    f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
-    'lag in World of Warships',
-    'my computer bluescreening', ## It runs on Windows, but at least my home one can have more than 4 tabs opening w/o hanging like my work one does.
-    'my game slowing to a crawl because another game decided it wanted to update then and there',
-    'the internet cutting out', ## Only thing worse is slow internet that's just fast enough for an internet connection to be registered.
-]
-sailorscouts = [
-    ##### ##### Outer Sol Senshi
-    'Sailor Mercury',
-    'Sailor Venus',
-    'Sailor Moon',
-    'Sailor Mars',
-    'Sailor Jupiter',
-    'Sailor Saturn',
-    'Sailor Uranus',
-    'Sailor Neptune',
-    'Sailor Pluto'
-]
-
-ofpeople_insults = [
-    'Gary, Indiana',
-    'Windows Vista',
-    'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
-    'Windows ME'
-]
-
-distancelist = [
-    'half an acre',
-    'half a mile',
-    f'{random.randint(3, 81)} kilometres',
-    f'{random.randint(2, 51)} miles'
-]
-
-favefilm_scen = [
-    'Charlie\'s Angels (2019)', ## One of my favoruite films from 2019.
-    'Ocean\'s 8',
-    'Doctor Strange',
-    'Doctor Strange and the Multiverse of Madness',
-    'Shang-Chi',
-    'all three John Wick films', ## The Adjudicator needs to be showered in love, imho.
-    'Hitchhiker\'s Guide to the Galaxy',
-    'Gunpowder Milkshake',
-    'Star Trek',
-    'Black Widow'
-]
-
 scenarios = [
     'listening to the sounds of someone in tech support yeeting a printer into the stratosphere',
     f'enjoying some {random.choice(streetfood)} as the sun sets',
@@ -268,21 +322,6 @@ whats_worse_than_x = [
     'A Lada with a spoiler'
 ]
 
-phrases_if_cats_could_talk = [
-    'Puny mortals, I summon thee!',
-    f'Human, bring me {random.randint(6,48)} fish, and I want it {random.randint(1,16)} minutes ago!'
-]
-
-except_maybe_one_thing = [ 
-    'kittens',
-    'cats',
-    'rainy days',
-    'spiders',
-    'scaring the shit out of people',
-    'Halloween',
-    'some good food'
-]
-
 voldemort_insult = [
     'he should hide from HowToBasic',
     'he comes from an egg carton',
@@ -295,37 +334,10 @@ file_extension = [
     'py'
 ]
 
-dentistcomments = [
-    'It satisfies me to no end when such circumstances arise that cause it to be rescheduled for a later date',
-    'I could not think of a worse way to spend my time',
-    'Half the equipment sounds like those mandrakes from Harry Potter'
-]
-
-cch_insults = [
-    'were the Human equivalent of participation awards.',
-    'were impossible to underestimate.',
-    'continued to meet everyone\'s expectations.',
-    'made everyone wish they were better strangers.',
-    'could be used as a bad example.',
-    'needed to apologise to the tree creating the oxygen they wasted on that puerile, underdramatized play that lacked anything resembling the Aristotelian unities. In short, it was shit.',
-    'were unique in such that being with them was like wearing wet socks.',
-    'seemed like they were unable to pour water out of a boot with the instructions on the heel.',
-    f'were about as useful as {random.choice(as_useful_as_a)}'
-]
-
 namesforbras = [
     'over the shoulder boulder holders',
     'boob jail',
     'booby traps'
-]
-
-sto_women = [
-    'Rinna Khev',
-    'Satra',
-    'Syvith',
-    'Tiaru Jarok',
-    'T\'Manda',
-    'T\'Par'
 ]
 
 afraid_examples = [
@@ -333,6 +345,45 @@ afraid_examples = [
     'Like most people playing Resident Evil with the lights off.',
     'Like someone in tech support when an update fucks up.'
 ]
+
+startrek_cinnamonrolls = [
+    'Adira Tal',
+    'Exri Dax',
+    'Jadzia Dax',
+    'Me Hani Ika Hali Ka Po',
+    'Michael Burnham',
+    'Seven of Nine',
+    'Tilly',
+]
+
+startrek_xaheans = [
+    'Xahean Adira',
+    'Me Hani Ika Hali Ka Po'
+]
+
+startrek_0_obsrv = [
+    f'I\'ve decided that all Xaheans are adorable, especially {random.choice(startrek_xaheans)}.',
+    f'{random.choice(startrek_cinnamonrolls)} is a cinnamon roll.',
+    f'{random.choice(startrek_xaheans)} must be protected at all costs.'
+]
+
+techproblem = [ ## ...could occur
+    'Password problems',
+    'An internet outage',
+    'A failed update',
+    f'A successful {random.choice(bad_os)} installation'
+]
+
+worse_than_pastels = [
+    'neon green with bright orange polka dots',
+    'tiled with those \'live, laugh, love\' things everywhere'
+]
+##### ##### ##### ##### ##### ##### ##### ##### ##### #####  ##### #####
+##### Below is the master array, containing all the things that    #####
+##### will actually be tweeted. I try to expand on them and give   #####
+##### them a bit of variety, but that is a bit challenging at      #####
+##### times.                                                       #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### #####  ##### #####
 
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
@@ -356,7 +407,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 116 • Generic Tweets
+    ##### ##### Tweets 12 to 117 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -372,6 +423,7 @@ tweetlist = [
     f'Woe to the Republic. First republic that comes to mind however\'s the Romulan Republic from STO. {random.choice(sto_women)}... phwaor. Guess that\'s what I get for being a Trekkie.',
     f'I can\'t tell of there\'s a thunderstorm coming or Pugsley\'s had beans again. {random.randint(2,13)} cans of air freshener won\'t be enough if it\'s not thunder.',
     f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
+    f'Five minutes into Star Trek and all I can say is {random.choice(startrek_0_obsrv)}',
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
     'I am not perky.',
@@ -405,7 +457,7 @@ tweetlist = [
     'Sometimes, there\'s no better thing than a lie in.',
     'I want nothing more than to just chill on some days. Today seems to be one of them.',
     'I can\'t tell whether it\'s going to rain or not some days.',
-    'I can almost hear people watching the Addams Family films everywhere. So this is what the Droste effect is. Interesting.',
+    'I can almost hear people watching the Addams Family films. So this is what the Droste effect is. Interesting.',
     f'Man, those two at Camp Chippewa were the {random.choice(ofpeople_insults)} of people.',
     f'Those two at Camp Chippewa {random.choice(cch_insults)}',
     'It\'s frustrating when you\'re in a hurry and things don\'t go to plan.',
@@ -413,7 +465,7 @@ tweetlist = [
     'I can hear that counterfeit Uncle Fester shitting bricks after what I\'ve been hearing.',
     f'./wednesday-addams.{random.choice(file_extension)}? Do they think I\'m emotionless like Data? I\'ll gladly have a cat, however.',
     'Those clouds had better not be mushroom shaped. I enjoy the macarbe, but not that.',
-    'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family?',
+    f'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family? {random.choice(techproblem)} could occur and Father would challenge the computer to a duel.',
     f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {gaytired}% tired.',
     'Sometimes I just want to sleep after a long day.',
     '"Men is too headache." I couldn\'t agree more.',
@@ -423,7 +475,7 @@ tweetlist = [
     'I just saw Emma Stone\'s portrayal of Cruella and all I can say is that I want to be in her arms.',
     'Being normal is boring.',
     'I overheard someone saying that some company\'s headquarters was their version of hell. I can only assume they work in tech support, so it\'s fortunate I don\'t bother with printers. Sounds like more trouble than they\'re worth.',
-    'I\'m still getting over Debbie\'s choice to use pastels. Like, seriously?',
+    f'I\'m still getting over Debbie\'s choice to use pastels. Like, seriously? Could be worse. It could be {random.choice(worse_than_pastels)}.',
     'I\'ve got the music from Sailor Moon stuck in my head. Not gonna lie, though, I like it.',
     'A friend of mine told me I should cosplay as Sailor Saturn. I\'ll give it some thought. She\'s my favourite sailor scout, after all.',
     'Could you imagine if Uncle Fester went to an anime convention? They\'d say One Punch Man let himself go.',
@@ -462,8 +514,6 @@ tweetlist = [
     f'Asking myself whether I should make myself a cup of tea or wait until later. I give it {random.randint(30,150)} minutes before the urge for a cup of tea becomes overwhelming.',
     f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
     f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.'
-
-
 ]
 
 conditional_tweetlist = [
