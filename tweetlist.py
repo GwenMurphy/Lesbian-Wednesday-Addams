@@ -320,7 +320,12 @@ namesforbras = [
 ]
 
 sto_women = [
-    'Tiaru Jarok'
+    'Rinna Khev',
+    'Satra',
+    'Syvith',
+    'Tiaru Jarok',
+    'T\'Manda',
+    'T\'Par'
 ]
 
 afraid_examples = [
@@ -395,7 +400,7 @@ tweetlist = [
     'Sometimes I get bored enough that I see no other thing to do than to look through memes for hours on end. The creativity is... impressive.',
     f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
     f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750,997)/100}',
-    f'I wonder whose idea was it to call bras \'{namesforbras}\'.',
+    f'I wonder whose idea was it to call bras \'{random.choice(namesforbras)}\'.',
     f'I don\'t like dentists. {random.choice(dentistcomments)}.',
     'Sometimes, there\'s no better thing than a lie in.',
     'I want nothing more than to just chill on some days. Today seems to be one of them.',
