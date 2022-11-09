@@ -341,46 +341,6 @@ namesforbras = [
     'booby traps'
 ]
 
-afraid_examples = [
-    'Like someone in tech support when confronted with a printer.',
-    'Like most people playing Resident Evil with the lights off.',
-    'Like someone in tech support when an update fucks up.',
-    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
-]
-
-startrek_cinnamonrolls = [
-    'Adira Tal',
-    'Exri Dax',
-    'Jadzia Dax',
-    'Me Hani Ika Hali Ka Po',
-    'Michael Burnham',
-    'Seven of Nine',
-    'Tilly',
-]
-
-startrek_xaheans = [
-    'Xahean Adira',
-    'Me Hani Ika Hali Ka Po'
-]
-
-startrek_0_obsrv = [
-    f'I\'ve decided that all Xaheans are adorable, especially {random.choice(startrek_xaheans)}.',
-    f'{random.choice(startrek_cinnamonrolls)} is a cinnamon roll.',
-    f'{random.choice(startrek_xaheans)} must be protected at all costs.'
-]
-
-techproblem = [ ## ...could occur
-    'Password problems',
-    'An internet outage',
-    'A failed update',
-    f'A successful {random.choice(bad_os)} installation'
-]
-
-worse_than_pastels = [
-    'neon green with bright orange polka dots',
-    'tiled with those \'live, laugh, love\' things everywhere'
-]
-
 earth_languages = [
     'Afrikaans',
     'Albanian',
@@ -427,6 +387,48 @@ earth_languages = [
     'Yiddish',
     'Zulu'
 ]
+
+afraid_examples = [
+    'Like someone in tech support when confronted with a printer.',
+    'Like most people playing Resident Evil with the lights off.',
+    'Like someone in tech support when an update fucks up.',
+    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
+]
+
+startrek_cinnamonrolls = [
+    'Adira Tal',
+    'Exri Dax',
+    'Jadzia Dax',
+    'Me Hani Ika Hali Ka Po',
+    'Michael Burnham',
+    'Seven of Nine',
+    'Tilly',
+]
+
+startrek_xaheans = [
+    'Xahean Adira',
+    'Me Hani Ika Hali Ka Po'
+]
+
+startrek_0_obsrv = [
+    f'I\'ve decided that all Xaheans are adorable, especially {random.choice(startrek_xaheans)}.',
+    f'{random.choice(startrek_cinnamonrolls)} is a cinnamon roll.',
+    f'{random.choice(startrek_xaheans)} must be protected at all costs.'
+]
+
+techproblem = [ ## ...could occur
+    'Password problems',
+    'An internet outage',
+    'A failed update',
+    f'A successful {random.choice(bad_os)} installation'
+]
+
+worse_than_pastels = [
+    'neon green with bright orange polka dots',
+    'tiled with those \'live, laugh, love\' things everywhere'
+]
+
+
 ##### ##### ##### ##### ##### ##### ##### ##### ##### #####  ##### #####
 ##### Below is the master array, containing all the things that    #####
 ##### will actually be tweeted. I try to expand on them and give   #####
