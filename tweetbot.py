@@ -3,8 +3,9 @@
 
 # Original script (kept up to date): https://github.com/robincamille/bot-tutorial/blob/master/mybot.py
 
-
+##### ##### ##### ##### #####
 ##### ##### ##### ##### ##### Housekeeping: do not edit.
+##### ##### ##### ##### #####
 from sre_constants import SRE_FLAG_MULTILINE
 import tweepy as tp
 import time
@@ -20,7 +21,9 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tp.API(auth)
 print('Authentication complete.')
 
+##### ##### ##### ##### #####
 ##### ##### ##### ##### ##### Making sure that anything important is logged.
+##### ##### ##### ##### #####
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)-12s - %(name)-12s - %(message)-12s', '%Y-%m-%d %H:%M:%S')
@@ -33,8 +36,9 @@ logger.addHandler(handler)
 os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/')
 
 
-
+##### ##### ##### ##### #####
 ##### ##### ##### ##### ##### What the bot will tweet.
+##### ##### ##### ##### #####
 def tweet():
     ##### ##### Picks a number from the main tweetlist and adds one to the number.
     line = random.randint(0, len(tweetlist)-1)
@@ -77,13 +81,13 @@ def tweet():
                     quit()
                 else:
                     api.update_status(conditional_tweetlist[3])
-                    print(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
-                    logger.info(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                    print(f'Conditional Tweet 4 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                    logger.info(f'Conditional Tweet 4 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
                     quit()
             else:
-                api.update_status(conditional_tweetlist[2]) #3rd one [2]
-                print(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
-                logger.info(f'Conditional Tweet 3 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
+                api.update_status(tweetlist[twln]) #3rd one [2]
+                print(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[twln]}')
+                logger.info(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[twln]}')
                 quit()
         
         ##### Is it October?
