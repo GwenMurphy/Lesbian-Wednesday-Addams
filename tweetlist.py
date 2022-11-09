@@ -127,7 +127,8 @@ ofpeople_insults = [
 
 phrases_if_cats_could_talk = [
     'Puny mortals, I summon thee!',
-    f'Human, bring me {random.randint(6,48)} fish, and I want it {random.randint(1,16)} minutes ago!'
+    f'Human, bring me {random.randint(6,48)} fish, and I want it {random.randint(1,16)} minutes ago!',
+    'The Duolingo owl can\'t stop me now!'
 ]
 
 sailorscouts = [
@@ -343,7 +344,8 @@ namesforbras = [
 afraid_examples = [
     'Like someone in tech support when confronted with a printer.',
     'Like most people playing Resident Evil with the lights off.',
-    'Like someone in tech support when an update fucks up.'
+    'Like someone in tech support when an update fucks up.',
+    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
 ]
 
 startrek_cinnamonrolls = [
@@ -377,6 +379,53 @@ techproblem = [ ## ...could occur
 worse_than_pastels = [
     'neon green with bright orange polka dots',
     'tiled with those \'live, laugh, love\' things everywhere'
+]
+
+earth_languages = [
+    'Afrikaans',
+    'Albanian',
+    'Arabic',
+    'Bengali',
+    'Chinese',
+    'Croatian',
+    'Czech',
+    'Danish',
+    'Dutch',
+    'English',
+    'Esperanto', ## Conlang
+    'Farsi',
+    'Finnish',
+    'French',
+    'German',
+    'Greek',
+    'Hawaiian',
+    'Hebrew',
+    'Hungarian',
+    'Hindi',
+    'Icelandic',
+    'Indonesian',
+    'Irish',
+    'Italian',
+    'Japanese',
+    'Korean',
+    'Latin',
+    'Navajo',
+    'Norwegian',
+    'Polish',
+    'Portuguese',
+    'Russian',
+    'Scottish Gaelic',
+    'Spanish',
+    'Swahili',
+    'Swedish',
+    'Thai',
+    'Turkish',
+    'Ukrainian',
+    'Vietnamese',
+    'Welsh', ## Cymru am byth!
+    'Xhosa',
+    'Yiddish',
+    'Zulu'
 ]
 ##### ##### ##### ##### ##### ##### ##### ##### ##### #####  ##### #####
 ##### Below is the master array, containing all the things that    #####
