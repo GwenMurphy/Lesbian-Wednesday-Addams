@@ -89,7 +89,7 @@ def tweet():
             if line == 0:
                 ##### ##### Tweet.
                 api.update_status(tweetlist[line])
-                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### Log it, both in the Terminal output and the log file. Make sure that the folder for the
                 ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
                 print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
                 logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
@@ -119,7 +119,7 @@ def tweet():
             if line == 1:
                 ##### ##### Tweet.
                 api.update_status(tweetlist[line])
-                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### Log it, both in the Terminal output and the log file. Make sure that the folder for the
                 ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
                 print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
                 logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
@@ -145,7 +145,7 @@ def tweet():
             if line == 2:
                 ##### ##### Tweet.
                 api.update_status(tweetlist[line])
-                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### Log it, both in the Terminal output and the log file. Make sure that the folder for the
                 ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
                 print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
                 logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
@@ -171,7 +171,7 @@ def tweet():
             if line == 3:
                 ##### ##### Tweet.
                 api.update_status(tweetlist[line])
-                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### Log it, both in the Terminal output and the log file. Make sure that the folder for the
                 ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
                 print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
                 logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
