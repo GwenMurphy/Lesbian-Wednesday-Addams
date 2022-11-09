@@ -80,7 +80,7 @@ def tweet():
                     logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
                     quit()
                 else:
-                    api.update_status(conditional_tweetlist[3])
+                    api.update_status(conditional_tweetlist[3]) #4th one [3]
                     print(f'Conditional Tweet 4 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
                     logger.info(f'Conditional Tweet 4 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
                     quit()

@@ -2,6 +2,8 @@ import random
 
 gaytired = random.randint(1,200)/10
 
+minutes_2lz = '%02d' % (random.randint(1,60),)
+
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 ##### The arrays below help to randomise the strings in the #####
 ##### master array (tweetlist) located at the bottom of     #####
@@ -15,13 +17,18 @@ as_useful_as_a = [
     'handles on a snowball.',
     'ejection seats on a helicopter.',
     'a concrete parachute.',
-    'an ashtray on a bike.'
+    'an ashtray on a bike.',
     'red lights in GTA.'
 ]
 
 bad_os = [
     'Windows ME',
     'Windows Vista'
+]
+
+bad_writing_obsrv = [
+    'Shit looks like Imhotep\'s homework',
+    'Shit looks like seismographic readings'
 ]
 
 cch_insults = [
@@ -83,6 +90,53 @@ distancelist = [
     f'{random.randint(2, 51)} miles'
 ]
 
+earth_languages = [
+    'Afrikaans',
+    'Albanian',
+    'Arabic',
+    'Bengali',
+    'Chinese',
+    'Croatian',
+    'Czech',
+    'Danish',
+    'Dutch',
+    'English',
+    'Esperanto', ## Conlang
+    'Farsi',
+    'Finnish',
+    'French',
+    'German',
+    'Greek',
+    'Hawaiian',
+    'Hebrew',
+    'Hungarian',
+    'Hindi',
+    'Icelandic',
+    'Indonesian',
+    'Irish',
+    'Italian',
+    'Japanese',
+    'Korean',
+    'Latin',
+    'Navajo',
+    'Norwegian',
+    'Polish',
+    'Portuguese',
+    'Russian',
+    'Scottish Gaelic',
+    'Spanish',
+    'Swahili',
+    'Swedish',
+    'Thai',
+    'Turkish',
+    'Ukrainian',
+    'Vietnamese',
+    'Welsh', ## Cymru am byth!
+    'Xhosa',
+    'Yiddish',
+    'Zulu'
+]
+
 except_maybe_one_thing = [ 
     'kittens',
     'cats',
@@ -116,6 +170,18 @@ gamingpeeves = [
     'my computer bluescreening', ## It runs on Windows, but at least my home one can have more than 4 tabs opening w/o hanging like my work one does.
     'my game slowing to a crawl because another game decided it wanted to update then and there',
     'the internet cutting out', ## Only thing worse is slow internet that's just fast enough for an internet connection to be registered.
+]
+
+gta_v_obsrv = [
+    'Has anyone told Michael De Santa he looks like he\'s holding in a fart for the whole game?', ## He does, though.
+    f'I like the chaos. I\'d say the odds of summoning Loki Odinson are {random.randint(8750,10000)/100}%.',
+    'I almost always tune the radio to the one with Cara Delevingne on.'
+]
+
+namesforbras = [
+    'over the shoulder boulder holders',
+    'boob jail',
+    'booby traps'
 ]
 
 ofpeople_insults = [
@@ -310,91 +376,6 @@ scenarios = [
     'reading a fuckton of IronDad fanfiction'
 ]
 
-whats_worse_than_x = [
-    'A printer',
-    f'{random.randint(2,100)} printers',
-    'A dirty, dilapidated hotel',
-    'Ellesmere Port',
-    'Gary, Indiana',
-    'New Jersey',
-    'A Fiat Multipla Mk I',
-    'A neon green Fiat Multipla Mk I',
-    'A Moskvitch 412 with fake eyelashes and a go-faster stripe',
-    'A Lada with a spoiler'
-]
-
-voldemort_insult = [
-    'he should hide from HowToBasic',
-    'he comes from an egg carton',
-    'the worst Dr Eggman cosplayer the world has ever known',
-    'an off-brand Kojak'
-]
-
-file_extension = [
-    'sh',
-    'py'
-]
-
-namesforbras = [
-    'over the shoulder boulder holders',
-    'boob jail',
-    'booby traps'
-]
-
-earth_languages = [
-    'Afrikaans',
-    'Albanian',
-    'Arabic',
-    'Bengali',
-    'Chinese',
-    'Croatian',
-    'Czech',
-    'Danish',
-    'Dutch',
-    'English',
-    'Esperanto', ## Conlang
-    'Farsi',
-    'Finnish',
-    'French',
-    'German',
-    'Greek',
-    'Hawaiian',
-    'Hebrew',
-    'Hungarian',
-    'Hindi',
-    'Icelandic',
-    'Indonesian',
-    'Irish',
-    'Italian',
-    'Japanese',
-    'Korean',
-    'Latin',
-    'Navajo',
-    'Norwegian',
-    'Polish',
-    'Portuguese',
-    'Russian',
-    'Scottish Gaelic',
-    'Spanish',
-    'Swahili',
-    'Swedish',
-    'Thai',
-    'Turkish',
-    'Ukrainian',
-    'Vietnamese',
-    'Welsh', ## Cymru am byth!
-    'Xhosa',
-    'Yiddish',
-    'Zulu'
-]
-
-afraid_examples = [
-    'Like someone in tech support when confronted with a printer.',
-    'Like most people playing Resident Evil with the lights off.',
-    'Like someone in tech support when an update fucks up.',
-    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
-]
-
 startrek_cinnamonrolls = [
     'Adira Tal',
     'Exri Dax',
@@ -416,11 +397,57 @@ startrek_0_obsrv = [
     f'{random.choice(startrek_xaheans)} must be protected at all costs.'
 ]
 
+stupidly_obvious_things = [
+    'Water is wet',
+    'Elizabeth Banks radiated mom energy in Charlie\'s Angels',
+    f'Cats are plotting world domination and I\'m {random.randint(75,101)}% sure they\'ve formed a hive mind at some point', ## They defo have.
+    'Trans women are women',
+    'Trans men are men',
+    'Cousin Itt is hairy',
+    'Chewbacca has hair',
+    'Thanos resembles a California raisin that overdid it on the protein', ## I'm surprised Tony Stark didn't say that to his face.
+    'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch is in Wales',
+    'Most people in the IT industry hate printers',
+    'Every sixty seconds, a minute passes'
+]
+
 techproblem = [ ## ...could occur
     'Password problems',
     'An internet outage',
     'A failed update',
     f'A successful {random.choice(bad_os)} installation'
+]
+
+voldemort_insult = [
+    'he should hide from HowToBasic', ## Tales of the uneggspected.
+    'he comes from an egg carton',    ## Yes, I live for bad puns, especially if they're mine.
+    'the worst Dr Eggman cosplayer the world has ever known',
+    'an off-brand Kojak'
+]
+
+whats_worse_than_x = [
+    'A printer',
+    f'{random.randint(2,100)} printers',
+    'A dirty, dilapidated hotel',
+    'Ellesmere Port',
+    'Gary, Indiana',
+    'New Jersey',
+    'A Fiat Multipla Mk I',
+    'A neon green Fiat Multipla Mk I',
+    'A Moskvitch 412 with fake eyelashes and a go-faster stripe',
+    'A Lada with a spoiler'
+]
+
+file_extension = [
+    'sh',
+    'py'
+]
+
+afraid_examples = [
+    'Like someone in tech support when confronted with a printer.',
+    'Like most people playing Resident Evil with the lights off.',
+    'Like someone in tech support when an update fucks up.',
+    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
 ]
 
 worse_than_pastels = [
@@ -458,7 +485,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 117 • Generic Tweets
+    ##### ##### Tweets 12 to 118 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -498,7 +525,7 @@ tweetlist = [
     'Who\'s that off-brand Uncle Fester playing at in the East?',
     'That feeling you get when you take your bra off after a long day. I can agree with that.',
     'Have you ever lied there thinking about something and the next thing you know it\'s the next morning? Only caffeine and the works of Poe sustain me from then on.',
-    f'Sometimes, {random.randint(7,10)}am feels like it\'s too early.',
+    f'Sometimes, {random.randint(7,10)}:{minutes_2lz}am feels like it\'s too early.',
     f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
     'Sometimes I get bored enough that I see no other thing to do than to look through memes for hours on end. The creativity is... impressive.',
     f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
@@ -539,32 +566,33 @@ tweetlist = [
     f'When the weather app says it\'s going to rain and then it doesn\'t. Ugh... {random.randint(60,90)}% chance, my ass.',
     'A litle but of sudden rain is nice.',
     'I like Fridays too.',
-    'I tried to upgrade my computer once but it hung at the wrong moment. The end result was a catastophe that required reinstalling the operating system and half a day of recovery. My plans for sleeping were fucked. Must\'ve been four in the morning by the time everything was sorted again.',
+    'I tried to upgrade my computer once but it hung at the wrong moment. The end result was a catastophe that required reinstalling the operating system and half a day of recovery.',
     f'I think I\'m the most prepared in the Addams clan. Pugsley\'s guess of {random.randint(1, 1000)} million of them was quite the overstatement.',
     'Why did they choose November 23rd? I\'d\'ve released it on October 31st. Halloween\'s a much better date.',
     'I think Jenna Ortega will do well as Wednesday.',
-    f'A wig from a bargain store and a pinafore is not an ideal cosplay - it\'s more like {random.randint(1,300)/10}/10 - though kudos for the effort at least.',
+    f'A wig from a bargain store and a pinafore is not an ideal cosplay - it\'s more like {random.randint(1,300)/100}/10 - though kudos for the effort at least.',
     f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
     'What is this \'uwu\' energy people keep mentioning? I\'m aware kittens possess that energy, but still...',
     'Fuck. It\'s sunny. Where\'s my umbrella?',
     'It\'s a bit cold outside.',
     'It\'s quite a pain in the ass when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
     'It was foggy this morning, and I liked it. Now it\'s sunny... damn it.',
-    'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written.',
+    f'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written. {random.choice(bad_writing_obsrv)}.',
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
     'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
     f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
     f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there\'s a {random.randint(35,65)}% chance they have.',
-    'Sometimes I get halfway through the day and mentally I go back to bed. ',
-    'They had men doing construction work out the window once. At least their radio choices were  decent.',
-    f'Been playing a lot of GTA V recently. I like the chaos. I\'d say the odds of summoning Loki Odinson are {random.randint(8750,10000)/100}%.',
+    'Sometimes I get halfway through the day and mentally I go back to bed.',
+    'They had men doing construction work out the window once. At least their radio choices were decent.',
+    f'Been playing a lot of GTA V recently. {random.choice(gta_v_obsrv)}',
     f'I\'m not surprised that lettuce won. I give myself {random.randint(2, 30)} days before I have some surreal dream about a civilization of sentient pieces of lettuce.',
     'I\'ve been playing games so much I expect Cara Delevingne\'s voice to be heard every time I turn the radio on.',
     'I tried brussels sprouts once. No thanks. What madman brought those things into existence?',
     'No idea what I wan\'t to do right now.',
     f'Asking myself whether I should make myself a cup of tea or wait until later. I give it {random.randint(30,150)} minutes before the urge for a cup of tea becomes overwhelming.',
     f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
-    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.'
+    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.',
+    f'Sometimes, you just have to tell people things that are stupidly obvious. "{random.choice(stupidly_obvious_things)}", for example.'
 ]
 
 conditional_tweetlist = [
