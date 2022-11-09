@@ -12,7 +12,7 @@ import time
 import random
 import logging
 import os
-import datetime
+from datetime import datetime
 from credentials import *
 from tweetlist import *
 from tweepy import OAuthHandler, API, TweepyException
@@ -35,130 +35,201 @@ logger.addHandler(handler)
 ##### Second os.chdir() just in case. I want the logs in the Logs subfolder.
 os.chdir('/home/wednesday-addams/Documents/.Automation/Twitter Bots/Lesbian Wednesday Addams/')
 
+##### ##### ##### ##### ##### 
+##### ##### ##### ##### ##### Other things of note.
+##### ##### ##### ##### ##### 
+
+##### ##### Premiere of "Wednesday" on Netflix.
+##### ##### Also, it's inspiration for this lesbian bot version.
+wedn_date = "23/11/2022"
+datefmt = "%d/%m/%Y"
+
+wedn_prem = datetime.strptime(wedn_date, datefmt)
+now = datetime.now()
+
+
+
 
 ##### ##### ##### ##### #####
 ##### ##### ##### ##### ##### What the bot will tweet.
 ##### ##### ##### ##### #####
 def tweet():
-    ##### ##### Picks a number from the main tweetlist and adds one to the number.
+    ##### ##### Picks a number from the tweetlist and adds one.
     line = random.randint(0, len(tweetlist)-1)
     global twln
     twln = line + 1
     global twln_tot
     twln_tot = len(tweetlist)
 
-    ##### ##### Make it work for the conditional tweetlist too.
+    ##### ##### Make sure it works for the conditional tweetlist too.
     ct_line = random.randint(0, len(conditional_tweetlist)-1)
     ct_twln = ct_line + 1
-    ct_twln_tot  = len(conditional_tweetlist)
+    ct_twln_tot = len(conditional_tweetlist)
 
-    ##### ##### And the song list
-    sl_line = random.randint(0, len(song_list)-1)
-    sl_twln = sl_line + 1
-    sl_twln_tot = len(song_list)
-
-    ##### ##### And the streetfood list
-    sf_line = random.randint(0, len(streetfood)-1)
-    sf_twln = sl_line + 1
-    sf_twln_tot = len(streetfood)
-
-    ##### ##### And the celebrity crush tweetlist
-    cb_line = random.randint(0, len(celeb)-1)
-    cb_twln = cb_line + 1
-    cb_twln_tot = len(celeb)
-
-    ##### ##### Account for any situation in which an alternate tweet is published.
-    if twln < 10:
-        ##### ##### Chooses the tweet from the other list.
-        ##### Is it Halloween?
-        if datetime.datetime.now().strftime("%d") == "31" and datetime.datetime.now().strftime("%B") == "October" and twln == 2:
-            if datetime.datetime.now().strftime("%B") == "October":
-                if datetime.datetime.now().strftime("%d") == "31":
-                    ct_twln = 2
-                    api.update_status(conditional_tweetlist[ct_twln-1]) #2nd one [1]
-                    print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-                    logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-                    quit()
-                else:
-                    api.update_status(conditional_tweetlist[3]) #4th one [3]
-                    print(f'Conditional Tweet 4 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
-                    logger.info(f'Conditional Tweet 4 of {ct_twln_tot} posted: {conditional_tweetlist[3]}')
-                    quit()
-            else:
-                api.update_status(tweetlist[twln]) #3rd one [2]
-                print(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[twln]}')
-                logger.info(f'Conditional Tweet {twln} of {twln_tot} posted: {tweetlist[twln]}')
+    ##### ##### Account for a situation in which an alternate tweet is published. For the first five tweets in the
+    ##### ##### tweetlist (tweetlist[0] to tweetlist[4]), another thing will happen in certain circumstances.
+    if twln <= 5:
+        ##### ##### If "line" equals 0, which it will sometimes, then it needs to be tweeted in some capacity.
+        if wedn_prem < now and line == 0:
+            ##### ##### If November 23rd, 2022 (premiere date of Wednesday) has passed.
+            if twln == 1:
+                ##### ##### Make the random number attributed to "ct_line" equal that of "line".
+                ct_line = line
+                ##### ##### Tweet.
+                api.update_status(conditional_tweetlist[line])
+                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Conditional tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                ##### ##### Exit the script.
                 quit()
-        
-        ##### Is it October?
-        elif datetime.datetime.now().strftime("%B") == "October" and twln == 4:
-            ct_twln = 4 #3
-            api.update_status(conditional_tweetlist[ct_twln-1])
-            print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-            logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-            quit()
-        
-        ##### Is it Wednesday?
-        elif datetime.datetime.today().weekday() == 2:
-            ct_twln = 5 #4
-            days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-            if days[datetime.datetime.today().weekday()] == 'Wednesday':
-                api.update_status(tweetlist[ct_twln-1]) #4
-                print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {tweetlist[ct_line]}')
-                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {tweetlist[ct_line]}')
-                quit()
-            else:
-                api.update_status(tweetlist[ct_twln-1])
-                print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+        else:
+        ##### ### It will default to this once the until the show has premiered before permanently switching to
+        ##### ### its conditional counterpart.
+            if line == 0:
+                ##### ##### Tweet.
+                api.update_status(tweetlist[line])
+                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
                 logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                ##### ##### Exit the script.
                 quit()
-        
-        ##### Is there a song stuck in Wednesday's head?
-        elif twln == 6 or twln == 7:
-            sl_twln = sl_line
-            api.update_status(tweetlist[line])
-            print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-            logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-            quit()
+                
+        ##### ##### If day-of-month is 31 and month is October.
+        ##### ##### In a nutshell, if it's Halloween.
+        if datetime.now().strftime("%d") == 31 and datetime.now().strftime("%B") == "October" and line == 1:
+            ##### ##### If the second tweet in the tweetlist (tweetlist[1]) is chosen, but it's on Halloween,
+            ##### ##### the second tweet in the conditional tweetlist (conditional_tweetlist[1]) will be selected
+            ##### ##### instead.
+            if twln == 2:
+                ##### ##### Make the random number attributed to "ct_line" equal that of "line". This if statement will not run if
+                ##### ##### line != 1, as twln will always equal line plus one.
+                ct_line = line
+                ##### ##### Tweet.
+                api.update_status(conditional_tweetlist[line])
+                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Conditional tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                ##### ##### Exit the script.
+                quit()
+        else:
+        ##### ### If "line" is equal to 1, but it is not Halloween...
+            if line == 1:
+                ##### ##### Tweet.
+                api.update_status(tweetlist[line])
+                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                ##### ##### Exit the script.
+                quit()
 
-        ##### Is Wednesday thinking about street food?
-        elif twln == 8 or twln == 9:
-            sf_twln = sf_line
-            api.update_status(tweetlist[line])
-            print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-            logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-            quit()
+        ##### ##### If month is October, but it's not Halloween.
+        if datetime.now().strftime("%B") == "October" and datetime.now().strftime("%d") != 31 and line == 2:
+            ##### ##### If the third tweet in the tweetlist is chosen, but it's also October, then the fourth tweet
+            ##### ##### in the conditional tweetlist will be selected instead.
+            if twln == 3:
+                ##### ##### The value of "ct_line" will equal that of "line"
+                ct_line = line
+                ##### ##### Tweet.
+                api.update_status(conditional_tweetlist[line])
+                ##### ##### Log it.
+                print(f'{time.asctime()} - Conditional tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                ##### ##### And exit.
+                quit()
+        else:
+        ##### ### If "line" is equal to 2, but it is October, but it's also not Halloween...
+            if line == 2:
+                ##### ##### Tweet.
+                api.update_status(tweetlist[line])
+                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                ##### ##### Exit the script.
+                quit()
 
-        ##### Is Wednesday thinking about a celebrity crush?
-        elif twln == 10:
-            cb_twln = cb_line
-            api.update_status(tweetlist[line])
-            print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-            logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-            quit()
+        ##### ##### If month is October.
+        if datetime.now().strftime("%B") == "October" and line == 3:
+            ##### ##### If the fourth tweet in the tweetlist is chosen, but it's also October, then the fourth tweet
+            ##### ##### in the conditional tweetlist will be selected instead.
+            if twln == 4:
+                ##### ##### The value of "ct_line" will equal that of "line"
+                ct_line = line
+                ##### ##### Tweet.
+                api.update_status(conditional_tweetlist[line])
+                ##### ##### Log it.
+                print(f'{time.asctime()} - Conditional tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                ##### ##### And exit.
+                quit()
+        else:
+        ##### ### If "line" is equal to 3, but it is not October...
+            if line == 3:
+                ##### ##### Tweet.
+                api.update_status(tweetlist[line])
+                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                ##### ##### Exit the script.
+                quit()
 
-        api.update_status(conditional_tweetlist[line])
-        print(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-        logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
-        quit()
+        ##### ##### If day-of-week is Wednesday.
+        if datetime.now().today().weekday() == 2 and line == 4:
+            ##### ##### If the fifth tweet in the tweetlist is chosen, but it's also Wednesday, then the last tweet
+            ##### ##### in the conditional tweetlist will be selected instead.
+            if twln == 5:
+                ##### ##### The value of "ct_line" will equal that of "line"
+                ct_line = line
+                ##### ##### Tweet
+                api.update_status(conditional_tweetlist[line])
+                ##### ##### Log it.
+                print(f'{time.asctime()} - Conditional tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
+                ##### ##### And exit.
+                quit()
+        else:
+        ##### ### If "line" is equal to 4, but it is not Wednesday...
+            if line == 4:
+                ##### ##### Tweet.
+                api.update_status(tweetlist[line])
+                ##### ##### Log it, both in the Terminal output and the log file. Make sure that the folder for the
+                ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
+                print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+                ##### ##### Exit the script.
+                quit()
+
     else:
-        ##### Comment this out during testing.
+        ##### ##### If the value of twln is higher than that of len(conditional_tweetlist)
+        ##### ##### Send a tweet.
         api.update_status(tweetlist[line])
-        ##### Print to the command line.
-        print(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
-        ##### Print to the log file too.
+        ##### ##### And log that motherfucker.
+        print(f'{time.asctime()} - Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
         logger.info(f'Tweet {twln} of {twln_tot} posted: {tweetlist[line]}')
+        ##### ##### And then exit.
         quit()
 
 
-# Does exactly what you think it does.
-##tweet()
-
-##### Tweets, but also accounts for TweepErrors and handles them accordingly.
+##### ##### Tweets, but also accounts for Tweepy errors and handles them accordingly.
+##### #####
+##### ##### However, that's making the bold assumption that the fucking thing will work and not throw
+##### ##### an error saying it needs to be in an integer format or some shit. I've tried fixing this
+##### ##### several times now and I'm not spamming tweets in the name of testing. If it misses an hour
+##### ##### on the cronjob, I'll investigate and see what it says in "Errors.log". If it outputs something
+##### ##### in the same format as the relevant if statement below, then we're golden and it's worked.
+##### ##### The tweet will not have happened, but it will allow me to pinpoint the error and see where
+##### ##### the problem is exactly, because in that regard, the error outputs from the crontab are about
+##### ##### as useful to me as a concrete parachute. It just tells me where it stopped in the thing, not
+##### ##### which tweet in the tweetlist is responsible for it.
 try:
     tweet()
 except TweepyException as err:
-    int = err.args[0][0]['code']
+    int = err.args[0][0]
     if int == 186:
         ##### If the tweet is too long.
         print(f'{time.asctime()} - Error 186 - Tweet {twln} of {twln_tot}: Tweet needs to be shortened.')
