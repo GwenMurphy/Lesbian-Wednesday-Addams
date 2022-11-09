@@ -596,9 +596,9 @@ tweetlist = [
 ]
 
 conditional_tweetlist = [
-    'I\'m quite enjoying Wednesday.', ##### [1] Go to conditional tweetlist.
-    'It\'s Halloween. Finally.', ##### [2] Go to conditional tweetlist.
-    'Halloween\'s not for some time yet. Still, another year closer to death\'s cold embrace.', ##### [3] Go to conditional tweetlist.
-    'October. The best month of all.', ##### [4] Go to conditional tweetlist.
-    'Thank goth it\'s Wednesday. The best day of the week, though I may be a bit biased on that one.' ##### [5] Go to conditional tweetlist.
+    'I\'m quite enjoying Wednesday.', ##### conditional_tweet[0]
+    'It\'s Halloween. Finally.', ##### conditional_tweet[1]
+    'Halloween\'s not for some time yet. Still, another year closer to death\'s cold embrace.', ##### conditional_tweet[2]
+    'October. The best month of all.', ##### conditional_tweet[3]
+    'Thank goth it\'s Wednesday. The best day of the week, though I may be a bit biased on that one.' ##### conditional_tweet[4]
 ]
