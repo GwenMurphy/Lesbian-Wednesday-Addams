@@ -55,7 +55,7 @@ now = datetime.now()
 ##### ##### For some reason, when it was in the tweet() function, it was fine on GitHub, but
 ##### ##### when the exact same thing was on my Rasbperry Pi, it was not. Fucking thing kept
 ##### ##### going on about undeclared variables. Moving them outside the function seems to
-##### ##### have sorted it. Let's hope it stands the test of time. It should to. It's a small
+##### ##### have sorted it. Let's hope it stands the test of time. It should do. It's a small
 ##### ##### script.
 ##### ##### \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 ##### ##### /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
