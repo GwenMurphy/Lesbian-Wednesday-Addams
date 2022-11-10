@@ -77,6 +77,11 @@ celeb = [
     'Anne Hathaway'
 ]
 
+cold_weather_comment = [
+    'If only it fucking snowed once in a while.',
+    'It\'s almost at that point where I can see my own breath. It\'s like a tiny ghost.'
+]
+
 dentistcomments = [
     'It satisfies me to no end when such circumstances arise that cause it to be rescheduled for a later date',
     'I could not think of a worse way to spend my time',
@@ -211,10 +216,12 @@ sailorscouts = [
 ]
 
 song_list = [
-    ##### ##### ##### ##### ##### Songs in List - 32
+    ##### ##### ##### ##### ##### Songs in List - 46
 
     ##### ##### A-Ha
     'The Living Daylights',
+    ##### ##### Agnes Obel
+    'September Song - Agnes Obel',
     ##### ##### Alex Gaudino
     'Destination Calabria',
     ##### ##### Babymetal
@@ -258,6 +265,8 @@ song_list = [
     'Rien du tout - Kekra',
     ##### ##### Lady Gaga
     'Paparazzi',
+    ##### ##### Lana Del Rey
+    'Season Of The Witch - Lana Del Rey',
     ##### ##### Lordi
     'Hard Rock Hallelujah',
     ##### ##### Marvin Gaye
@@ -574,12 +583,12 @@ tweetlist = [
     f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
     'What is this \'uwu\' energy people keep mentioning? I\'m aware kittens possess that energy, but still...',
     'Fuck. It\'s sunny. Where\'s my umbrella?',
-    'It\'s a bit cold outside.',
+    f'It\'s a bit cold outside. {random.choice(cold_weather_comment)}',
     'It\'s quite a pain in the ass when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
     'It was foggy this morning, and I liked it. Now it\'s sunny... damn it.',
     f'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written. {random.choice(bad_writing_obsrv)}.',
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
-    'It\'s colder than I expected it to be today. A reminder of the cold embrace of death.',
+    f'It\'s colder than I expected it to be today. A reminder of the cold embrace of death. {random.choice(cold_weather_comment)}',
     f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
     f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there\'s a {random.randint(35,65)}% chance they have.',
     'Sometimes I get halfway through the day and mentally I go back to bed.',
@@ -602,3 +611,4 @@ conditional_tweetlist = [
     'October. The best month of all.', ##### conditional_tweet[3]
     'Thank goth it\'s Wednesday. The best day of the week, though I may be a bit biased on that one.' ##### conditional_tweet[4]
 ]
+
