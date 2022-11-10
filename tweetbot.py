@@ -48,24 +48,22 @@ wedn_prem = datetime.strptime(wedn_date, datefmt)
 now = datetime.now()
 
 
-
+##### ##### ##### ##### #####
+##### ##### ##### ##### ##### Variables to be used.
+##### ##### ##### ##### #####
+##### ##### Picks a number from the tweetlist and adds one.
+line = random.randint(0, len(tweetlist)-1)
+twln = line + 1
+twln_tot = len(tweetlist)
+##### ##### Make sure it works for the conditional tweetlist too.
+ct_line = random.randint(0, len(conditional_tweetlist)-1)
+ct_twln = ct_line + 1
+ct_twln_tot = len(conditional_tweetlist)
 
 ##### ##### ##### ##### #####
 ##### ##### ##### ##### ##### What the bot will tweet.
 ##### ##### ##### ##### #####
 def tweet():
-    ##### ##### Picks a number from the tweetlist and adds one.
-    line = random.randint(0, len(tweetlist)-1)
-    global twln
-    twln = line + 1
-    global twln_tot
-    twln_tot = len(tweetlist)
-
-    ##### ##### Make sure it works for the conditional tweetlist too.
-    ct_line = random.randint(0, len(conditional_tweetlist)-1)
-    ct_twln = ct_line + 1
-    ct_twln_tot = len(conditional_tweetlist)
-
     ##### ##### Account for a situation in which an alternate tweet is published. For the first five tweets in the
     ##### ##### tweetlist (tweetlist[0] to tweetlist[4]), another thing will happen in certain circumstances.
     if twln <= 5:
