@@ -85,7 +85,7 @@ def tweet():
                 ct_line = line
                 ##### ##### Tweet.
                 api.update_status(conditional_tweetlist[line])
-                ##### ##### Log it, both in the Termainal output and the log file. Make sure that the folder for the
+                ##### ##### Log it, both in the Terminal output and the log file. Make sure that the folder for the
                 ##### ##### log files exist, or an error will be displayed saying the folder can not be found.
                 print(f'{time.asctime()} - Conditional tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
                 logger.info(f'Conditional Tweet {ct_twln} of {ct_twln_tot} posted: {conditional_tweetlist[ct_line]}')
