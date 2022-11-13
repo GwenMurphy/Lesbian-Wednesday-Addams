@@ -7,7 +7,8 @@ minutes_2lz = '%02d' % (random.randint(1,60),)
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 ##### The arrays below help to randomise the strings in the #####
 ##### master array (tweetlist) located at the bottom of     #####
-##### this Python file.                                     #####
+##### this Python file. They are also referenced by other   #####
+##### arrays, hence their location at the top of the file.  #####
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 
 as_useful_as_a = [
@@ -20,6 +21,122 @@ as_useful_as_a = [
     'an ashtray on a bike.',
     'red lights in GTA.'
 ]
+
+MCU_geniuses = [
+    'Tony Stark', ## Genius Billionaire Playboy Philanthropist
+    'Shuri', ## Wakanda's ultimate authority on meme culture must be protected at all costs.
+    'Riri Williams', ## Ironheart.
+]
+
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+##### Imagine, if you will, an ambitious attempt at so much #####
+##### fanfiction that it warrants its own alternate         #####
+##### universe. This bit contains references to it and to   #####
+##### understand the references, you need to be me.         #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
+dreamscen_pLR_facts_AceOfSpades = [
+    'and she\'s also a Starfleet Admiral.',
+    f'and in terms of intellect she\'s basically Star Trek\'s answer to {random.choice(MCU_geniuses)}.',
+    'and thanks to her friend\'s training, she defeated eight Zhat Vash agents singlehandedly.',
+    'and she\'s friends with the reigning monarchs of at least four worlds, including Xahea.',
+    'and she loves shawarma.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_AceOfHearts = [
+    'and she\'s the Number 1 enemy of the Tal Shiar.',
+    'and she plans on one day becoming Proconsul of the Romulan Republic.',
+    'and her wife\'s the Romulan doppelgänger of Kristen Stewart.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_AceOfDiamonds = [
+    'and Tilly is her soulmate separated by time.',
+    'and a friend of hers guessed that she\'d run for President of the United Federation of Planets.',
+    'and she can\'t go a fortnight without the Ace of Spades sneaking in a Kakegurui reference.',
+    'and she\'s also a Starfleet Admiral',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_AceOfClubs = [
+    'and she\'s a sailor scout and a Dahar Master.',
+    'and she has the eternal gratitude of House Martok.',
+    'and she singlehandedly defeated Molor and his Fek\'Ihri hordes.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_QueenOfSpades = [
+    'and she\'s the Xahean answer to John Wick.',
+    'and she has been described as a walking Final Destination film.',
+    'and she once defeated seven Klingons with a pencil defending someone who she sees as a sister.',
+    'and she\'s Samoan on her dad\'s side, Xahean on her mum\'s.',
+    'and she\'s a sister figure to the Ace of Spades.',
+    'and she loves cucumber sandwiches.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_MonarchOfHearts = [
+    'and they\'re an administrative powerhouse on a scale that fair boggles the mind.',
+    'and like the other Royals, they\'re fluent in 19 languages.',
+    'and they loved khachapuri so much they decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_QueenOfDiamonds = [
+    'and rumour has it she stopped a group of traitorous Klingons with a single stare.'
+    'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_QueenOfClubs = [
+    'and she\'s Vulcan\'s expert on radiating mom energy.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_JackOfSpades = [
+    'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_JackOfHearts = [
+    'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_JackOfDiamonds = [
+    'she\'s the must successful Andorian DJ of all time.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_pLR_facts_JackOfClubs = [
+    'and she\'s got the ability to keep the Klingon chancellor on their toes.',
+    'and she loved khachapuri so much she decided to learn Georgian.'
+]
+
+dreamscen_prompts_LesRoyales = [
+    f'Chloë Grace Moretz is the Ace of Spades {random.choice(dreamscen_pLR_facts_AceOfSpades)}',
+    f'Brie Larson is the Ace of Hearts {random.choice(dreamscen_pLR_facts_AceOfHearts)}',
+    f'Minami Hamabe is the Ace of Diamonds {random.choice(dreamscen_pLR_facts_AceOfDiamonds)}',
+    f'Elsa Pataky is the Ace of Clubs {random.choice(dreamscen_pLR_facts_AceOfClubs)}',
+    f'Frankie Adams is the Queen of Spades {random.choice(dreamscen_pLR_facts_QueenOfSpades)}',
+    f'Asia Kate Dillon is the Monarch of Hearts {random.choice(dreamscen_pLR_facts_MonarchOfHearts)}',
+    f'Su-Metal is the Queen of Diamonds {random.choice(dreamscen_pLR_facts_QueenOfDiamonds)}',
+    f'Awkwafina is the Queen of Clubs {random.choice(dreamscen_pLR_facts_QueenOfClubs)}',
+    f'Yui-Metal is the Jack of Spades {random.choice(dreamscen_pLR_facts_JackOfSpades)}',
+    f'Moa-Metal is the Jack of Hearts {random.choice(dreamscen_pLR_facts_JackOfHearts)}',
+    f'Cara Delevingne is the Jack of Diamonds {random.choice(dreamscen_pLR_facts_JackOfDiamonds)}',
+    f'Lena Headey is the Jack of Clubs {random.choice(dreamscen_pLR_facts_JackOfClubs)}'
+]
+
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+##### The arrays below help to randomise the strings in the #####
+##### master array (tweetlist) located at the bottom of     #####
+##### this Python file.                                     #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
+
 
 bad_os = [
     'Windows ME',
@@ -74,7 +191,8 @@ celeb = [
     'Margot Robbie',
     'Rihanna',
     'Awkwafina',
-    'Anne Hathaway'
+    'Anne Hathaway',
+    'Elsa Pataky'
 ]
 
 cold_weather_comment = [
@@ -93,6 +211,18 @@ distancelist = [
     'half a mile',
     f'{random.randint(3, 81)} kilometres',
     f'{random.randint(2, 51)} miles'
+]
+
+dreamscen_location = [
+    f'in the {random.randint(24,26)}th century Star Trek universe'
+]
+
+dreamscen_prompt = [
+    f'there\'s a group of benevolent HBICs called Les Royales where {random.choice(dreamscen_prompts_LesRoyales)}'
+]
+
+dreamscenario = [
+    f'It\'s set {random.choice(dreamscen_location)} where {random.choice(dreamscen_prompt)}'
 ]
 
 earth_languages = [
@@ -350,6 +480,9 @@ streetfood = [
     'kushikatsu',
     'udon',
     'yakitori',
+    ##### Lebanon
+    'shawarma',
+    'manaqish'
     ##### Philippines
     
     ##### Taiwan
@@ -494,7 +627,7 @@ tweetlist = [
     ##### ##### Tweets 11 to 11 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 118 • Generic Tweets
+    ##### ##### Tweets 12 to 122 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
@@ -511,6 +644,10 @@ tweetlist = [
     f'I can\'t tell of there\'s a thunderstorm coming or Pugsley\'s had beans again. {random.randint(2,13)} cans of air freshener won\'t be enough if it\'s not thunder.',
     f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
     f'Five minutes into Star Trek and all I can say is {random.choice(startrek_0_obsrv)}',
+    f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
+    f'I dreamt something that sounded like fanfiction. {random.choice(dreamscenario)}',
+    f'Took me {random.randint(1,2500)/10000} seconds to join the #wenclair fandom.',
+    f'Found myself waiting {random.randint(45,195)} minutes for a meal at a restaurant once. Not going there again.',
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
     'I am not perky.',
