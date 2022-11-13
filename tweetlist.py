@@ -84,7 +84,7 @@ dreamscen_pLR_facts_MonarchOfHearts = [
 ]
 
 dreamscen_pLR_facts_QueenOfDiamonds = [
-    'and rumour has it she stopped a group of traitorous Klingons with a single stare.'
+    'and rumour has it she stopped a group of traitorous Klingons with a single stare.',
     'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
     'and she loved khachapuri so much she decided to learn Georgian.'
 ]
