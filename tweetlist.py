@@ -25,7 +25,7 @@ as_useful_as_a = [
 MCU_geniuses = [
     'Tony Stark', ## Genius Billionaire Playboy Philanthropist
     'Shuri', ## Wakanda's ultimate authority on meme culture must be protected at all costs.
-    'Riri Williams', ## Ironheart.
+    'Riri Williams' ## Ironheart.
 ]
 
 
