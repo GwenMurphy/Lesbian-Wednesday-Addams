@@ -114,7 +114,7 @@ dreamscen_pLR_facts_JackOfHearts = [
 dreamscen_pLR_facts_JackOfDiamonds = [
     'she\'s the must successful Andorian DJ of all time.',
     'and she loved khachapuri so much she decided to learn Georgian.'
-    'and she\'s got at least hald a dozen albums gone platinum.'
+    'and she\'s got at least half a dozen albums gone platinum.'
 ]
 
 dreamscen_pLR_facts_JackOfClubs = [
@@ -290,8 +290,7 @@ except_maybe_one_thing = [
     'scaring the shit out of people',
     'Halloween',
     'some good food',
-    f'{random.choice(celeb)}',
-    f'{random.choice(streetfood)}'
+    f'{random.choice(celeb)}'
 ]
 
 favefilm_scen = [
