@@ -19,7 +19,11 @@ as_useful_as_a = [
     'ejection seats on a helicopter.',
     'a concrete parachute.',
     'an ashtray on a bike.',
-    'red lights in GTA.'
+    'red lights in GTA.',
+    'a Windows Vista installation disk.',
+    'nipples on Batman\'s suit.',
+    'an inflatable dartboard.',
+    'a fart in a spacesuit.'
 ]
 
 MCU_geniuses = [
@@ -42,14 +46,16 @@ dreamscen_pLR_facts_AceOfSpades = [
     'and thanks to her friend\'s training, she defeated eight Zhat Vash agents singlehandedly.',
     'and she\'s friends with the reigning monarchs of at least four worlds, including Xahea.',
     'and she loves shawarma.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and she\'s a goth cinnamon roll.'
 ]
 
 dreamscen_pLR_facts_AceOfHearts = [
     'and she\'s the Number 1 enemy of the Tal Shiar.',
     'and she plans on one day becoming Proconsul of the Romulan Republic.',
     'and her wife\'s the Romulan doppelgänger of Kristen Stewart.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and she\'s a goth cinnamon roll.'
 ]
 
 dreamscen_pLR_facts_AceOfDiamonds = [
@@ -64,7 +70,8 @@ dreamscen_pLR_facts_AceOfClubs = [
     'and she\'s a sailor scout and a Dahar Master.',
     'and she has the eternal gratitude of House Martok.',
     'and she singlehandedly defeated Molor and his Fek\'Ihri hordes.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and she\'s got the hots for Adet\'pa and L\'Rell.'
 ]
 
 dreamscen_pLR_facts_QueenOfSpades = [
@@ -107,6 +114,7 @@ dreamscen_pLR_facts_JackOfHearts = [
 dreamscen_pLR_facts_JackOfDiamonds = [
     'she\'s the must successful Andorian DJ of all time.',
     'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she\'s got at least hald a dozen albums gone platinum.'
 ]
 
 dreamscen_pLR_facts_JackOfClubs = [
@@ -145,7 +153,8 @@ bad_os = [
 
 bad_writing_obsrv = [
     'Shit looks like Imhotep\'s homework',
-    'Shit looks like seismographic readings'
+    'Shit looks like seismographic readings.',
+    'Shit makes a doctor\'s handwriting look legible.'
 ]
 
 cch_insults = [
@@ -203,7 +212,8 @@ cold_weather_comment = [
 dentistcomments = [
     'It satisfies me to no end when such circumstances arise that cause it to be rescheduled for a later date',
     'I could not think of a worse way to spend my time',
-    'Half the equipment sounds like those mandrakes from Harry Potter'
+    'Half the equipment sounds like those mandrakes from Harry Potter',
+    'It\'s expensive and painful.'
 ]
 
 distancelist = [
@@ -279,7 +289,9 @@ except_maybe_one_thing = [
     'spiders',
     'scaring the shit out of people',
     'Halloween',
-    'some good food'
+    'some good food',
+    f'{random.choice(celeb)}',
+    f'{random.choice(streetfood)}'
 ]
 
 favefilm_scen = [
@@ -292,7 +304,8 @@ favefilm_scen = [
     'Hitchhiker\'s Guide to the Galaxy',
     'Gunpowder Milkshake',
     'Star Trek',
-    'Black Widow'
+    'Black Widow',
+    'Black Panther'
 ]
 
 gamingpeeves = [
@@ -310,7 +323,8 @@ gamingpeeves = [
 gta_v_obsrv = [
     'Has anyone told Michael De Santa he looks like he\'s holding in a fart for the whole game?', ## He does, though.
     f'I like the chaos. I\'d say the odds of summoning Loki Odinson are {random.randint(8750,10000)/100}%.',
-    'I almost always tune the radio to the one with Cara Delevingne on.'
+    'I almost always tune the radio to the one with Cara Delevingne on.',
+    'Regardless of the car, an attempt at drifting round corners always happens.'
 ]
 
 namesforbras = [
@@ -321,9 +335,8 @@ namesforbras = [
 
 ofpeople_insults = [
     'Gary, Indiana',
-    'Windows Vista',
     'Fiat Multipla Mk I', ## It's ugly, and that's an understatement.
-    'Windows ME'
+    f'{random.choice(bad_os)}'
 ]
 
 phrases_if_cats_could_talk = [
@@ -577,12 +590,14 @@ whats_worse_than_x = [
     'A Fiat Multipla Mk I',
     'A neon green Fiat Multipla Mk I',
     'A Moskvitch 412 with fake eyelashes and a go-faster stripe',
-    'A Lada with a spoiler'
+    'A Lada with a spoiler',
+    f'A successful {random.choice(bad_os)} installation'
 ]
 
 file_extension = [
     'sh',
-    'py'
+    'py',
+    'exe'
 ]
 
 afraid_examples = [
@@ -590,6 +605,7 @@ afraid_examples = [
     'Like most people playing Resident Evil with the lights off.',
     'Like someone in tech support when an update fucks up.',
     f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
+    'Like someone when their parents say their full name.'
 ]
 
 worse_than_pastels = [
