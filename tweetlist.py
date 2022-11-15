@@ -360,6 +360,23 @@ favefilm_scen = [
     'Black Panther'
 ]
 
+fictional_wenclair_stans = [
+    ##### MCU
+    'Deadpool',
+    'Michelle Jones',
+    'Natasha Romanov',
+    'Ned Leeds',
+    'Okoye',
+    'Pepper Potts',
+    'Peter Parker',
+    'Shuri',
+    'Steve Rogers',
+    'Tony Stark',
+    'Vision',
+    'Wanda Maximoff',
+    'Yelena Belova'
+]
+
 gamingpeeves = [
     'griefers on GTA Online',
     'lag on GTA Online',
@@ -704,10 +721,11 @@ tweetlist = [
     ##### ##### Tweets 20 to 20 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 21 to 21 • #wenclair
+    ##### ##### Tweets 21 to 22 • #wenclair
     f'I hope they make #wenclair canon.',
+    f'I feel like, if you put them in the right scenario, {random.choice(fictional_wenclair_stans)} would join the #wenclair bandwagon.',
 
-    ##### ##### Tweets 22 to 122 • Generic Tweets
+    ##### ##### Tweets 22 to 123 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'For {random.randint(1, 751)/1000} seconds I imagined Father spending some time in France. As for how dramatic he\'d be on a scale of 1 to 10 when he notices everyone speaking French, I\'d say at least {random.randint(50, 1000)}.',
