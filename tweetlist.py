@@ -32,6 +32,12 @@ MCU_geniuses = [
     'Riri Williams' ## Ironheart.
 ]
 
+virus_list = [
+    'adware',
+    'malware',
+    'ransomware',
+    'spyware'
+]
 
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 ##### Imagine, if you will, an ambitious attempt at so much #####
@@ -47,7 +53,9 @@ dreamscen_pLR_facts_AceOfSpades = [
     'and she\'s friends with the reigning monarchs of at least four worlds, including Xahea.',
     'and she loves shawarma.',
     'and she loved khachapuri so much she decided to learn Georgian.',
-    'and she\'s a goth cinnamon roll.'
+    'and she\'s a goth cinnamon roll.',
+    'and she\'s a professional poker player, having won the bracelet 9 times.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_AceOfHearts = [
@@ -55,7 +63,8 @@ dreamscen_pLR_facts_AceOfHearts = [
     'and she plans on one day becoming Proconsul of the Romulan Republic.',
     'and her wife\'s the Romulan doppelgänger of Kristen Stewart.',
     'and she loved khachapuri so much she decided to learn Georgian.',
-    'and she\'s a goth cinnamon roll.'
+    'and she\'s a goth cinnamon roll.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_AceOfDiamonds = [
@@ -63,7 +72,8 @@ dreamscen_pLR_facts_AceOfDiamonds = [
     'and a friend of hers guessed that she\'d run for President of the United Federation of Planets.',
     'and she can\'t go a fortnight without the Ace of Spades sneaking in a Kakegurui reference.',
     'and she\'s also a Starfleet Admiral',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_AceOfClubs = [
@@ -71,7 +81,8 @@ dreamscen_pLR_facts_AceOfClubs = [
     'and she has the eternal gratitude of House Martok.',
     'and she singlehandedly defeated Molor and his Fek\'Ihri hordes.',
     'and she loved khachapuri so much she decided to learn Georgian.',
-    'and she\'s got the hots for Adet\'pa and L\'Rell.'
+    'and she\'s got the hots for Adet\'pa and L\'Rell.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_QueenOfSpades = [
@@ -80,46 +91,53 @@ dreamscen_pLR_facts_QueenOfSpades = [
     'and she once defeated seven Klingons with a pencil defending someone who she sees as a sister.',
     'and she\'s Samoan on her dad\'s side, Xahean on her mum\'s.',
     'and she\'s a sister figure to the Ace of Spades.',
-    'and she loves cucumber sandwiches.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved cucumber sandwiches.',
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_MonarchOfHearts = [
     'and they\'re an administrative powerhouse on a scale that fair boggles the mind.',
-    'and like the other Royals, they\'re fluent in 19 languages.',
-    'and they loved khachapuri so much they decided to learn Georgian.'
+    'and they loved khachapuri so much they decided to learn Georgian.',
+    'and like the other Royals, they\'re fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_QueenOfDiamonds = [
     'and rumour has it she stopped a group of traitorous Klingons with a single stare.',
     'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_QueenOfClubs = [
     'and she\'s Vulcan\'s expert on radiating mom energy.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_JackOfSpades = [
     'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_JackOfHearts = [
     'and alongside her sisters (as well as alone), she\'s a force to be reckoned with.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_JackOfDiamonds = [
     'she\'s the must successful Andorian DJ of all time.',
     'and she loved khachapuri so much she decided to learn Georgian.'
-    'and she\'s got at least half a dozen albums gone platinum.'
+    'and she\'s got at least half a dozen albums gone platinum.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_pLR_facts_JackOfClubs = [
     'and she\'s got the ability to keep the Klingon chancellor on their toes.',
-    'and she loved khachapuri so much she decided to learn Georgian.'
+    'and she loved khachapuri so much she decided to learn Georgian.',
+    'and like the other Royals, she\'s fluent in 19 languages.'
 ]
 
 dreamscen_prompts_LesRoyales = [
@@ -154,7 +172,8 @@ bad_os = [
 bad_writing_obsrv = [
     'Shit looks like Imhotep\'s homework',
     'Shit looks like seismographic readings.',
-    'Shit makes a doctor\'s handwriting look legible.'
+    'Shit makes a doctor\'s handwriting look legible.',
+    'Shit looks like an attempt at calligraphy done in the back of a moving rally car.'
 ]
 
 cch_insults = [
@@ -169,11 +188,31 @@ cch_insults = [
     f'were about as useful as {random.choice(as_useful_as_a)}'
 ]
 
+cch_gary_insults_sentient = [
+    'participation award',
+    f'{random.choice(bad_os)} installaiton disc',
+    'bottle of Eau de Escherichia coli',
+    'bottle of Eau de Staphylococcus epidermidis',
+    'McAfee subscription',
+    f'{random.choice(virus_list)} infection'
+]
+
+cch_gary_insults = [
+    f'sentient {random.choice(cch_gary_insults_sentient)}',
+    'stale loaf of bread',
+    'forgotten sandwich covered in mold'
+]
+
+cat_scenario = [
+    f'If they developed opposable thumbs tomorrow, within {random.randint(1,20)} they would have achieved world domination.',
+    f'I sometimes like to imagine how chaotic things would be if they had telekinesis.'
+]
+
 celeb = [
-    'Karen Gillan',
-    'Ella Balinska', ## She was fantastic in Charlie's Angels.
-    'Alexandra Daddario',
-    'Daisy Ridley',
+    'Karen Gillan', ## My Number 1 celebrity crush.
+    'Ella Balinska', ## She was fantastic in Charlie's Angels. She's also my Number 2 celebrity crush.
+    'Alexandra Daddario', ## My Number 3 celebrity crush
+    'Daisy Ridley', ## My number 4 celebrity crush
     'Kristen Stewart',
     'Aura Garrido', ## Amelia Folch in El Ministerio del Tiempo
     'Úrsula Corberó', ## Tokyo in Money Heist
@@ -181,7 +220,7 @@ celeb = [
     'Tessa Thompson',
     'Scarlett Johansson',
     'Ana de Armas',
-    'Léa Seydoux',
+    'Léa Seydoux', ## Celebrity crush
     'Kate Beckinsale',
     'Elizabeth Banks', ## Bosley 342 gives off Mom energy.
     'Naomi Scott',
@@ -202,6 +241,20 @@ celeb = [
     'Awkwafina',
     'Anne Hathaway',
     'Elsa Pataky'
+]
+
+cold_things = [
+    'the Svalbard Global Seed Vault',
+    'an ice cube',
+    'gazpacho soup',
+    'an Icelandic winter',
+    'a Greenlandic winter',
+    'an Antarctic winter',
+    'nighttime on Pluto',
+    'liquid nitrogen',
+    'liquid helium',
+    'liquid oxygen',
+    'ice cream'
 ]
 
 cold_weather_comment = [
@@ -277,7 +330,7 @@ earth_languages = [
     'Ukrainian',
     'Vietnamese',
     'Welsh', ## Cymru am byth!
-    'Xhosa',
+    'Xhosa', ## Shuri must be protected at all costs.
     'Yiddish',
     'Zulu'
 ]
@@ -285,11 +338,11 @@ earth_languages = [
 except_maybe_one_thing = [ 
     'kittens',
     'cats',
-    'rainy days',
+    'rainy days', ## Or as they call it in Britain, "a day ending in a Y."
     'spiders',
     'scaring the shit out of people',
     'Halloween',
-    'some good food',
+    'some good food', ## In the name of all that is holy, avoid having a cuppa at Keele Services. It was horrible.
     f'{random.choice(celeb)}'
 ]
 
@@ -311,7 +364,7 @@ gamingpeeves = [
     'griefers on GTA Online',
     'lag on GTA Online',
     f'failing a timed mission on GTA Online by something like {random.randint(1,1000)/1000} seconds',
-    'failing a hard mission on GTA Online',
+    'failing a hard mission on GTA Online', ## Looking at you, Cayo Perico. It's a tough bitch trying to do it w/o being detected.
     f'high ping rates of something like {random.randint(1000,5000)}ms in World of Warships',
     'lag in World of Warships',
     'my computer bluescreening', ## It runs on Windows, but at least my home one can have more than 4 tabs opening w/o hanging like my work one does.
@@ -438,11 +491,11 @@ song_list = [
 ]
 
 sto_women = [
-    'Rinna Khev',
+    'Rinna Khev', ## I imagine her looking like Kate Beckinsale.
     'Satra',
     'Syvith',
-    'Tiaru Jarok',
-    'T\'Manda',
+    'Tiaru Jarok', ## I imagine her looking like Alexandra Daddario.
+    'T\'Manda', ## I imagine her looking like Saoirse Ronan.
     'T\'Par'
 ]
 
@@ -534,7 +587,7 @@ startrek_cinnamonrolls = [
     'Adira Tal',
     'Exri Dax',
     'Jadzia Dax',
-    'Me Hani Ika Hali Ka Po',
+    'Me Hani Ika Hali Ka Po', ## "Is that spumoni?" - Po
     'Michael Burnham',
     'Seven of Nine',
     'Tilly',
@@ -542,7 +595,7 @@ startrek_cinnamonrolls = [
 
 startrek_xaheans = [
     'Xahean Adira',
-    'Me Hani Ika Hali Ka Po'
+    'Me Hani Ika Hali Ka Po' ## "Is that spumoni?" - Po
 ]
 
 startrek_0_obsrv = [
@@ -562,7 +615,7 @@ stupidly_obvious_things = [
     'Thanos resembles a California raisin that overdid it on the protein', ## I'm surprised Tony Stark didn't say that to his face.
     'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch is in Wales',
     'Most people in the IT industry hate printers',
-    'Every sixty seconds, a minute passes'
+    'Every sixty seconds, a minute passes' ## "Together, we can stop this."
 ]
 
 techproblem = [ ## ...could occur
@@ -575,7 +628,7 @@ techproblem = [ ## ...could occur
 voldemort_insult = [
     'he should hide from HowToBasic', ## Tales of the uneggspected.
     'he comes from an egg carton',    ## Yes, I live for bad puns, especially if they're mine.
-    'the worst Dr Eggman cosplayer the world has ever known',
+    'the worst Dr Eggman cosplayer the world has ever known', ## Did not meet eggspectations.
     'an off-brand Kojak'
 ]
 
@@ -589,7 +642,7 @@ whats_worse_than_x = [
     'A Fiat Multipla Mk I',
     'A neon green Fiat Multipla Mk I',
     'A Moskvitch 412 with fake eyelashes and a go-faster stripe',
-    'A Lada with a spoiler',
+    'A Lada with a spoiler', ## Why the fuck would that even be a thing?
     f'A successful {random.choice(bad_os)} installation'
 ]
 
@@ -601,15 +654,15 @@ file_extension = [
 
 afraid_examples = [
     'Like someone in tech support when confronted with a printer.',
-    'Like most people playing Resident Evil with the lights off.',
-    'Like someone in tech support when an update fucks up.',
-    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.'
+    'Like most people playing Resident Evil with the lights off.', ## Claire Redfield in the remastered RE2 is defo my fictional transition goal.
+    'Like someone in tech support when an update fucks up.', ## Every day, probably.
+    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.' ## Mofo got tired of listening to The Who, so he opted for vengeance.
     'Like someone when their parents say their full name.'
 ]
 
 worse_than_pastels = [
     'neon green with bright orange polka dots',
-    'tiled with those \'live, laugh, love\' things everywhere'
+    'tiled with those \'live, laugh, love\' things everywhere' ## That shit not only ugly, but pointless too.
 ]
 
 
@@ -624,7 +677,7 @@ tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
     'Still isn\'t Halloween yet...', ##### [2] Go to conditional tweetlist.
-    'I\'ll be said when October is gone.', ##### [3] Go to conditional tweetlist.
+    'I\'ll be sad when October is gone.', ##### [3] Go to conditional tweetlist.
     'I can\'t wait for October.', ##### [4] Go to conditional tweetlist.
     'Got a 1 in 7 of posting this on the right day, but thank goth it\'s Wednesday.', ##### [5] Go to conditional tweetlist.
 
@@ -662,6 +715,8 @@ tweetlist = [
     f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
     f'I dreamt something that sounded like fanfiction. {random.choice(dreamscenario)}',
     f'Took me {random.randint(1,2500)/10000} seconds to join the #wenclair fandom.',
+    f'I hope they make #wenclair canon.'
+    f'Dreamt I was looking at {random.choice(celeb)} the way Mother and Father look at one another. I\'m about as surprised as I would be if you said the sun was hotter than {random.choice(cold_things)}.'
     f'Found myself waiting {random.randint(45,195)} minutes for a meal at a restaurant once. Not going there again.',
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
@@ -670,7 +725,7 @@ tweetlist = [
     f'What\'s worse than Camp Chippewa? {random.choice(whats_worse_than_x)}, according to someone whose comment I overheard the other day.',
     'On Wednesdays, we wear black.',
     f'{random.choice(sailorscouts)}? I like her.',
-    'Cats are homicidal furballs.',
+    f'Cats are homicidal furballs. {random.choice(cat_scenario)}.',
     f'I hate everything... except maybe {random.choice(except_maybe_one_thing)}',
     'I\'ll stop wearing black when they make a darker color.',
     'You severely underestimate my apathy.',
@@ -707,7 +762,7 @@ tweetlist = [
     f'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family? {random.choice(techproblem)} could occur and Father would challenge the computer to a duel.',
     f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {gaytired}% tired.',
     'Sometimes I just want to sleep after a long day.',
-    '"Men is too headache." I couldn\'t agree more.',
+    f'"Men is too headache." I couldn\'t agree more, especially if the man in question is that {random.choice(cch_gary_insults)} from Camp Chippewa.',
     f'If cats could talk, I wonder what they\'d say. Probably something like "{random.choice(phrases_if_cats_could_talk)}"',
     'I sometimes wish I was in the Townsend Agency. Someone should make fanfiction of that, come to think of it. The Addams Family x 2019 Charlie\'s Angels would be an interesting combination',
     'Tea is the only thing keeping me awake sometimes.',
@@ -718,12 +773,12 @@ tweetlist = [
     'I\'ve got the music from Sailor Moon stuck in my head. Not gonna lie, though, I like it.',
     'A friend of mine told me I should cosplay as Sailor Saturn. I\'ll give it some thought. She\'s my favourite sailor scout, after all.',
     'Could you imagine if Uncle Fester went to an anime convention? They\'d say One Punch Man let himself go.',
-    'I hate it when I want a lie in and something wakes me up.',
+    f'I hate it when I want a lie in and something wakes me up. {random.randint(1/101)/100}/10 - do not recommend.',
     f'I want a lie in. I\'m {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
     f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
     f'What in the fresh fuck is this Barbie thing? I\'ve sat there for {random.randint(1, 9)} hours trying to understand it only to still be confused.',
-    'I forget to sleep sometimes, and I always end up paying for it the next day, moreso if I rise early.',
+    'I forget to sleep sometimes, and I always end up paying for it the next day, moreso if I rise early. What\'s worse is rising early for no reason when you want a lie in.',
     f'When the weather app says it\'s going to rain and then it doesn\'t. Ugh... {random.randint(60,90)}% chance, my ass.',
     'A litle but of sudden rain is nice.',
     'I like Fridays too.',
@@ -736,7 +791,7 @@ tweetlist = [
     'What is this \'uwu\' energy people keep mentioning? I\'m aware kittens possess that energy, but still...',
     'Fuck. It\'s sunny. Where\'s my umbrella?',
     f'It\'s a bit cold outside. {random.choice(cold_weather_comment)}',
-    'It\'s quite a pain in the ass when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
+    f'It\'s quite a pain in the ass when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
     'It was foggy this morning, and I liked it. Now it\'s sunny... damn it.',
     f'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written. {random.choice(bad_writing_obsrv)}.',
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
