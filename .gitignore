@@ -1,10 +1,12 @@
 ## Files not to upload
 credentials.py
 iftweet.py
-Errors.log
+*.log
+
 
 ## Folders not to upload
 __pycache__/*
 .vscode/
 UpdateLogs/*
 Logs/*
+
