@@ -432,7 +432,7 @@ sailorscouts = [
 ]
 
 song_list = [
-    ##### ##### ##### ##### ##### Songs in List - 46
+    ##### ##### ##### ##### ##### Songs in List - 47
 
     ##### ##### A-Ha
     'The Living Daylights',
@@ -456,6 +456,8 @@ song_list = [
     'Bunny is a Rider',
     ##### ##### Cornershop
     'Brimful of Asha',
+    ##### ##### Def Leppard
+    'Pour Some Sugar On Me',
     ##### ##### Dire Straits
     'Sultans of Swing',
     'Walk of Life',
