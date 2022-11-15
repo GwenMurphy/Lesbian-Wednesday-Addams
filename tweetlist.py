@@ -39,6 +39,10 @@ virus_list = [
     'spyware'
 ]
 
+eau_de_unlikely = [
+    'Escherichia coli',
+    'Staphylococcus epidermidis'
+]
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 ##### Imagine, if you will, an ambitious attempt at so much #####
 ##### fanfiction that it warrants its own alternate         #####
@@ -191,8 +195,7 @@ cch_insults = [
 cch_gary_insults_sentient = [
     'participation award',
     f'{random.choice(bad_os)} installaiton disc',
-    'bottle of Eau de Escherichia coli',
-    'bottle of Eau de Staphylococcus epidermidis',
+    f'bottle of Eau de {random.choice(eau_de_unlikely)}',
     'McAfee subscription',
     f'{random.choice(virus_list)} infection'
 ]
@@ -200,7 +203,8 @@ cch_gary_insults_sentient = [
 cch_gary_insults = [
     f'sentient {random.choice(cch_gary_insults_sentient)}',
     'stale loaf of bread',
-    'forgotten sandwich covered in mold'
+    'forgotten sandwich covered in mold',
+    'Human question mark'
 ]
 
 cat_scenario = [
@@ -564,7 +568,7 @@ streetfood = [
     'yakitori',
     ##### Lebanon
     'shawarma',
-    'manaqish'
+    'manaqish',
     ##### Philippines
     
     ##### Taiwan
@@ -692,40 +696,50 @@ worse_than_pastels = [
 
 tweetlist = [
     ##### ##### Tweets 1 to 5 • Conditional Tweets
-    'I await Wednesday with great interest.', ##### [1] Go to conditional tweetlist.
-    'Still isn\'t Halloween yet...', ##### [2] Go to conditional tweetlist.
-    'I\'ll be sad when October is gone.', ##### [3] Go to conditional tweetlist.
-    'I can\'t wait for October.', ##### [4] Go to conditional tweetlist.
-    'Got a 1 in 7 of posting this on the right day, but thank goth it\'s Wednesday.', ##### [5] Go to conditional tweetlist.
+    'I await Wednesday with great interest.',
+    'Still isn\'t Halloween yet...',
+    'I\'ll be sad when October is gone.',
+    'I can\'t wait for October.',
+    'Got a 1 in 7 chance of posting this on the right day, but thank goth it\'s Wednesday.',
 
-    ##### ##### Tweets 6 to 8 • Song Tweets
-    f'Why do I have {random.choice(song_list)} stuck in my head all of a sudden?', ##### [6] Go to song tweetlist
-    f'I\'m sitting there doing fuck-all and all of a sudden {random.choice(song_list)} plays in my head. Pretty sure my brain\'s a radio station at this point.', ##### [7] Go to song tweetlist
+
+    ##### ##### Tweets 6 to 9 • Song Tweets
+    f'Why do I have {random.choice(song_list)} stuck in my head all of a sudden?',
+    f'I\'m sitting there doing fuck-all and all of a sudden {random.choice(song_list)} plays in my head. Pretty sure my brain\'s a radio station at this point.',
     f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
+    f'Sometimes I find myself bored out of my mind before {random.choice(song_list)} starts playing in my head.',
 
-    ##### ##### Tweets 9 to 13 • Street Food Tweets
-    f'I\'ve got street food stuck on my mind right now. I think my brain\'s telling me to have some {random.choice(streetfood)}.', ##### [8] Go to streetfood tweetlist
-    f'If I could summon food out of thin air, I\'d probably have some {random.choice(streetfood)} in front of me right now.', ##### [9] Go to streetfood tweetlist
+
+    ##### ##### Tweets 10 to 15 • Street Food Tweets
+    f'I\'ve got street food stuck on my mind right now. I think my brain\'s telling me to have some {random.choice(streetfood)}.', 
+    f'If I could summon food out of thin air, I\'d probably have some {random.choice(streetfood)} in front of me right now.', 
     f'What I need is a sling ring and some highly advanced technology so that I can give Sailor Pluto some {random.choice(streetfood)} and a much needed hug.',
     f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
     f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
+    f'I like to imagine that if I had magical powers, I\'d end up using them to summon some {random.choice(streetfood)}.',
 
-    ##### ##### Tweets 14 to 19 • Celebrity Tweets
-    f'Mother\'s been trying to guess who has been on my mind today. {random.choice(celeb)} was her latest guess.', ##### [10] Go to celeb tweetlist
+
+    ##### ##### Tweets 16 to 21 • Celebrity Tweets
+    f'Mother\'s been trying to guess who has been on my mind today. {random.choice(celeb)} was her latest guess.', 
     f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
     f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
     f'Dreamt I was looking at {random.choice(celeb)} the way Mother and Father look at one another. I\'m about as surprised as I would be if you said the sun was hotter than {random.choice(cold_things)}.'
     f'That moment when you look at {random.choice(celeb)} and you feel the last vestiges of your heterosexuality disappearing. Yes. Mother noticed.',
     f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
 
-    ##### ##### Tweets 20 to 20 • Gaming Peeves
-    f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 21 to 22 • #wenclair
+    ##### ##### Tweets 22 to 22 • Gaming Peeves
+    f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
+    f'The last thing I want when I\'m gaming is {random.choice(gamingpeeves)}.',
+
+
+    ##### ##### Tweets 23 to 25 • #wenclair
     f'I hope they make #wenclair canon.',
     f'I feel like, if you put them in the right scenario, {random.choice(fictional_wenclair_stans)} would join the #wenclair bandwagon.',
+    f'Took me {random.randint(1,2500)/10000} seconds to join the #wenclair fandom.',
 
-    ##### ##### Tweets 23 to 124 • Generic Tweets
+
+    ##### ##### Tweets 26 to 126 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'For {random.randint(1, 751)/1000} seconds I imagined Father spending some time in France. As for how dramatic he\'d be on a scale of 1 to 10 when he notices everyone speaking French, I\'d say at least {random.randint(50, 1000)}.',
@@ -740,7 +754,6 @@ tweetlist = [
     f'I can\'t tell of there\'s a thunderstorm coming or Pugsley\'s had beans again. {random.randint(2,13)} cans of air freshener won\'t be enough if it\'s not thunder.',
     f'Five minutes into Star Trek and all I can say is {random.choice(startrek_0_obsrv)}',
     f'I dreamt something that sounded like fanfiction. {random.choice(dreamscenario)}',
-    f'Took me {random.randint(1,2500)/10000} seconds to join the #wenclair fandom.',
     f'Found myself waiting {random.randint(45,195)} minutes for a meal at a restaurant once. Not going there again.',
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
