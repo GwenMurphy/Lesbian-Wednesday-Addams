@@ -681,42 +681,48 @@ tweetlist = [
     'I can\'t wait for October.', ##### [4] Go to conditional tweetlist.
     'Got a 1 in 7 of posting this on the right day, but thank goth it\'s Wednesday.', ##### [5] Go to conditional tweetlist.
 
-    ##### ##### Tweets 6 to 7 • Song Tweets
+    ##### ##### Tweets 6 to 8 • Song Tweets
     f'Why do I have {random.choice(song_list)} stuck in my head all of a sudden?', ##### [6] Go to song tweetlist
     f'I\'m sitting there doing fuck-all and all of a sudden {random.choice(song_list)} plays in my head. Pretty sure my brain\'s a radio station at this point.', ##### [7] Go to song tweetlist
+    f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
 
-    ##### ##### Tweets 8 to 9 • Street Food Tweets
+    ##### ##### Tweets 9 to 13 • Street Food Tweets
     f'I\'ve got street food stuck on my mind right now. I think my brain\'s telling me to have some {random.choice(streetfood)}.', ##### [8] Go to streetfood tweetlist
     f'If I could summon food out of thin air, I\'d probably have some {random.choice(streetfood)} in front of me right now.', ##### [9] Go to streetfood tweetlist
+    f'What I need is a sling ring and some highly advanced technology so that I can give Sailor Pluto some {random.choice(streetfood)} and a much needed hug.',
+    f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
+    f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
 
-    ##### ##### Tweets 10 to 10 • Celebrity Tweets
+    ##### ##### Tweets 14 to 19 • Celebrity Tweets
     f'Mother\'s been trying to guess who has been on my mind today. {random.choice(celeb)} was her latest guess.', ##### [10] Go to celeb tweetlist
+    f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
+    f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
+    f'Dreamt I was looking at {random.choice(celeb)} the way Mother and Father look at one another. I\'m about as surprised as I would be if you said the sun was hotter than {random.choice(cold_things)}.'
+    f'That moment when you look at {random.choice(celeb)} and you feel the last vestiges of your heterosexuality disappearing. Yes. Mother noticed.',
+    f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
 
-    ##### ##### Tweets 11 to 11 • Gaming Peeves
+    ##### ##### Tweets 20 to 20 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
 
-    ##### ##### Tweets 12 to 122 • Generic Tweets
+    ##### ##### Tweets 21 to 21 • #wenclair
+    f'I hope they make #wenclair canon.',
+
+    ##### ##### Tweets 22 to 122 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
-    f'I\'m craving {random.choice(streetfood)} right now. Where\'s Dr Strange and that sling ring of his? It\'ll save me having to walk to get the food.',
     f'For {random.randint(1, 751)/1000} seconds I imagined Father spending some time in France. As for how dramatic he\'d be on a scale of 1 to 10 when he notices everyone speaking French, I\'d say at least {random.randint(50, 1000)}.',
     f'Where\'s a thunderstorm when you need one? It\'s been at least {random.randint(3,8)} days since the last one.',
     f'There\'s nothing better than a peaceful night, a gentle breeze and a temperature of {random.randint(16,22)}°C',
     f'Thing\'s had a guess at what I dreamt of the other day. "A day out with {random.choice(celeb)}, {random.choice(scenarios)}" was what he wrote down.',
     f'Someone just guessed what\'s on my mind now. They said, "{random.choice(celeb)}, some {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
-    f'What I need is a sling ring and some highly advanced technology so that I can give Sailor Pluto some {random.choice(streetfood)} and a much needed hug.',
     f'Sometimes, my internet wants to run like it was made in {random.randint(1327,1933)}.',
     f'Trying to get VS Code, WSL and GitHub to play ball together\'s a pain in the ass. At least {random.randint(95,175)}% pure frustration.',
     f'Why do people make doing certain processes hard? I swear it ends up taking {random.randint(2,6)} hours to do something that should take minutes.',
     f'Woe to the Republic. First republic that comes to mind however\'s the Romulan Republic from STO. {random.choice(sto_women)}... phwaor. Guess that\'s what I get for being a Trekkie.',
     f'I can\'t tell of there\'s a thunderstorm coming or Pugsley\'s had beans again. {random.randint(2,13)} cans of air freshener won\'t be enough if it\'s not thunder.',
-    f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
     f'Five minutes into Star Trek and all I can say is {random.choice(startrek_0_obsrv)}',
-    f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
     f'I dreamt something that sounded like fanfiction. {random.choice(dreamscenario)}',
     f'Took me {random.randint(1,2500)/10000} seconds to join the #wenclair fandom.',
-    f'I hope they make #wenclair canon.'
-    f'Dreamt I was looking at {random.choice(celeb)} the way Mother and Father look at one another. I\'m about as surprised as I would be if you said the sun was hotter than {random.choice(cold_things)}.'
     f'Found myself waiting {random.randint(45,195)} minutes for a meal at a restaurant once. Not going there again.',
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
@@ -736,13 +742,11 @@ tweetlist = [
     '\'Wednesday\'s child is full of woe.\' Sounds about right.',
     'I heard that someone described Camp Chippewa as the Windows Vista of camps. I tried that once when learning how to use a computer. They\'re not wrong.',
     'Okay, I admit it. I like Billie Eilish.',
-    f'That moment when you look at {random.choice(celeb)} and you feel the last vestiges of your heterosexuality disappearing. Yes. Mother noticed.',
     'Okay, I admit it, I am officially gay for Ella Balinska. I liked that one part of the quarry scene and I didn\'t blame Sabina for covering her eyes. None of them seem the macabre type.',
     'Who\'s that off-brand Uncle Fester playing at in the East?',
     'That feeling you get when you take your bra off after a long day. I can agree with that.',
     'Have you ever lied there thinking about something and the next thing you know it\'s the next morning? Only caffeine and the works of Poe sustain me from then on.',
     f'Sometimes, {random.randint(7,10)}:{minutes_2lz}am feels like it\'s too early.',
-    f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
     'Sometimes I get bored enough that I see no other thing to do than to look through memes for hours on end. The creativity is... impressive.',
     f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
     f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750,997)/100}',
@@ -787,7 +791,6 @@ tweetlist = [
     'Why did they choose November 23rd? I\'d\'ve released it on October 31st. Halloween\'s a much better date.',
     'I think Jenna Ortega will do well as Wednesday.',
     f'A wig from a bargain store and a pinafore is not an ideal cosplay - it\'s more like {random.randint(1,300)/100}/10 - though kudos for the effort at least.',
-    f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
     'What is this \'uwu\' energy people keep mentioning? I\'m aware kittens possess that energy, but still...',
     'Fuck. It\'s sunny. Where\'s my umbrella?',
     f'It\'s a bit cold outside. {random.choice(cold_weather_comment)}',
@@ -796,7 +799,6 @@ tweetlist = [
     f'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written. {random.choice(bad_writing_obsrv)}.',
     'It\'s warmer than I expected it to be today. All that\'s missing is a blanket, a girlfriend, and some nice horror films.',
     f'It\'s colder than I expected it to be today. A reminder of the cold embrace of death. {random.choice(cold_weather_comment)}',
-    f'I want something to eat, but I don\'t know what I want. At least {random.randint(25,75)}% of me wants {random.choice(streetfood)}.',
     f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there\'s a {random.randint(35,65)}% chance they have.',
     'Sometimes I get halfway through the day and mentally I go back to bed.',
     'They had men doing construction work out the window once. At least their radio choices were decent.',
