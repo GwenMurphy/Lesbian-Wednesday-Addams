@@ -793,7 +793,7 @@ tweetlist = [
     f'I\'m still getting over Debbie\'s choice to use pastels. Like, seriously? Could be worse. It could be {random.choice(worse_than_pastels)}.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
     f'It\'s a bit cold outside. {random.choice(cold_weather_comment)}',
-    f'It\'s quite a pain in the ass when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
+    f'It\'s quite a pain in the ass (at least {random.randint(50,101)/10}/10) when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
     f'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written. {random.choice(bad_writing_obsrv)}.',
     f'It\'s colder than I expected it to be today. A reminder of the cold embrace of death. {random.choice(cold_weather_comment)}',
     f'Been playing a lot of GTA V recently. {random.choice(gta_v_obsrv)}',
