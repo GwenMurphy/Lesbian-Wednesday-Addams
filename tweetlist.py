@@ -773,7 +773,7 @@ tweetlist = [
     'I\'ve got the music from Sailor Moon stuck in my head. Not gonna lie, though, I like it.',
     'A friend of mine told me I should cosplay as Sailor Saturn. I\'ll give it some thought. She\'s my favourite sailor scout, after all.',
     'Could you imagine if Uncle Fester went to an anime convention? They\'d say One Punch Man let himself go.',
-    f'I hate it when I want a lie in and something wakes me up. {random.randint(1/101)/100}/10 - do not recommend.',
+    f'I hate it when I want a lie in and something wakes me up. {random.randint(1,101)/100}/10 - do not recommend.',
     f'I want a lie in. I\'m {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
     f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
