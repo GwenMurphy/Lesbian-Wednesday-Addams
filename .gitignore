@@ -5,6 +5,6 @@ Errors.log
 
 ## Folders not to upload
 __pycache__/*
-.vscode/*
+.vscode/
 UpdateLogs/*
 Logs/*
