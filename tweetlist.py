@@ -725,7 +725,7 @@ tweetlist = [
     f'I hope they make #wenclair canon.',
     f'I feel like, if you put them in the right scenario, {random.choice(fictional_wenclair_stans)} would join the #wenclair bandwagon.',
 
-    ##### ##### Tweets 22 to 123 • Generic Tweets
+    ##### ##### Tweets 23 to 124 • Generic Tweets
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'For {random.randint(1, 751)/1000} seconds I imagined Father spending some time in France. As for how dramatic he\'d be on a scale of 1 to 10 when he notices everyone speaking French, I\'d say at least {random.randint(50, 1000)}.',
