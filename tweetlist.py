@@ -789,33 +789,54 @@ tweetlist = [
 
 
     ##### ##### ##### ##### Tweets 53 to 80 • Formatted Generic Tweets
-    f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
-    f'Thing\'s had a guess at what I dreamt of the other day. "A day out with {random.choice(celeb)}, {random.choice(scenarios)}" was what he wrote down.',
-    f'Someone just guessed what\'s on my mind now. They said, "{random.choice(celeb)}, some {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
-    f'Woe to the Republic. First republic that comes to mind however\'s the Romulan Republic from STO. {random.choice(sto_women)}... phwaor. Guess that\'s what I get for being a Trekkie.',
-    f'Five minutes into Star Trek and all I can say is {random.choice(startrek_0_obsrv)}',
-    f'I dreamt something that sounded like fanfiction. {random.choice(dreamscenario)}',
-    f'What\'s worse than Camp Chippewa? {random.choice(whats_worse_than_x)}, according to someone whose comment I overheard the other day.',
-    f'{random.choice(sailorscouts)}? I like her.',
-    f'Cats are homicidal furballs. {random.choice(cat_scenario)}.',
-    f'I hate everything... except maybe {random.choice(except_maybe_one_thing)}',
-    f'Be afraid. Be very afraid. {random.choice(afraid_examples)}',
-    f'Damn, Lestrange. You could\'ve picked a man with a nose at least. Dude looks like {random.choice(voldemort_insult)}.',
-    f'I wonder whose idea was it to call bras \'{random.choice(namesforbras)}\'.',
-    f'I don\'t like dentists. {random.choice(dentistcomments)}.',
+    ##### A.F. History • Tweets 53 to 55
     f'Man, those two at Camp Chippewa were the {random.choice(ofpeople_insults)} of people.',
     f'Those two at Camp Chippewa {random.choice(cch_insults)}',
+    f'I\'m still getting over Debbie\'s choice to use pastels. Like, seriously? Could be worse. It could be {random.choice(worse_than_pastels)}.',
+
+    ##### Anime • Tweets 56 to 56
+    f'{random.choice(sailorscouts)}? I like her.',
+
+    ##### Cats • Tweets 57 to 58
+    f'Cats are homicidal furballs. {random.choice(cat_scenario)}.',
+    f'If cats could talk, I wonder what they\'d say. Probably something like "{random.choice(phrases_if_cats_could_talk)}"',
+    
+    ##### Dreams • Tweets 59 to 61
+    f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
+    f'Thing\'s had a guess at what I dreamt of the other day. "A day out with {random.choice(celeb)}, {random.choice(scenarios)}" was what he wrote down.',
+    f'I dreamt something that sounded like fanfiction. {random.choice(dreamscenario)}',
+
+    ##### Films • Tweets 62 to 62
+    f'Damn, Lestrange. You could\'ve picked a man with a nose at least. Dude looks like {random.choice(voldemort_insult)}.',
+
+    ##### Gaming • Tweets 63 to 64
+    f'Woe to the Republic. First republic that comes to mind however\'s the Romulan Republic from STO. {random.choice(sto_women)}... phwaor. Guess that\'s what I get for being a Trekkie.',
+    f'Been playing a lot of GTA V recently. {random.choice(gta_v_obsrv)}',
+
+    ##### On Wednesday's Mind • Tweets 65 to 65
+    f'Someone just guessed what\'s on my mind now. They said, "{random.choice(celeb)}, some {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
+
+    ##### Quotes • Tweets 66 to 67
+    f'I hate everything... except maybe {random.choice(except_maybe_one_thing)}',
+    f'Be afraid. Be very afraid. {random.choice(afraid_examples)}',
+
+    ##### Television • Tweets 68 to 68
+    f'Five minutes into Star Trek and all I can say is {random.choice(startrek_0_obsrv)}',
+
+    ##### Weather • Tweets 69 to 70
+    f'It\'s colder than I expected it to be today. A reminder of the cold embrace of death. {random.choice(cold_weather_comment)}',
+    f'It\'s a bit cold outside. {random.choice(cold_weather_comment)}',
+
+    ##### TO BE SORTED • Tweets 71 to 80
+    f'What\'s worse than Camp Chippewa? {random.choice(whats_worse_than_x)}, according to someone whose comment I overheard the other day.',
+    f'I wonder whose idea was it to call bras \'{random.choice(namesforbras)}\'.',
+    f'I don\'t like dentists. {random.choice(dentistcomments)}.',
     f'./wednesday-addams.{random.choice(file_extension)}? Do they think I\'m emotionless like Data? I\'ll gladly have a cat, however.',
     f'Linux intrigues me for some reason, though I am not quite sure why. Could you imagine a sysadmin in the Addams Family? {random.choice(techproblem)} could occur and Father would challenge the computer to a duel.',
     f'"Men is too headache." I couldn\'t agree more, especially if the man in question is that {random.choice(cch_gary_insults)} from Camp Chippewa.',
-    f'If cats could talk, I wonder what they\'d say. Probably something like "{random.choice(phrases_if_cats_could_talk)}"',
-    f'I\'m still getting over Debbie\'s choice to use pastels. Like, seriously? Could be worse. It could be {random.choice(worse_than_pastels)}.',
     f'I doubt Father could handle a trip to France. I can hear "Tish, that\'s French!" from {random.choice(distancelist)} away.',
-    f'It\'s a bit cold outside. {random.choice(cold_weather_comment)}',
     f'It\'s quite a pain in the ass (at least {random.randint(50,101)/10}/10) when there\'s short deadline in which to do something and I have to rewrite the entirety of something in the space of a day.',
     f'Ask me to write something down in a hurry and you can guarantee that in a week\'s time, I\'ll need the Rosetta Stone just to read what the fuck I\'ve written. {random.choice(bad_writing_obsrv)}.',
-    f'It\'s colder than I expected it to be today. A reminder of the cold embrace of death. {random.choice(cold_weather_comment)}',
-    f'Been playing a lot of GTA V recently. {random.choice(gta_v_obsrv)}',
     f'Sometimes, you just have to tell people things that are stupidly obvious. "{random.choice(stupidly_obvious_things)}", for example.',
 
 
