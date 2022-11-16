@@ -256,3 +256,11 @@ except TweepyException as err:
         print(f'{time.asctime()} - Error 401 - Unauthorized. Please make sure your keys/credentials are correct and try again.')
         quit()
     """
+
+##### Exceptions list for tweepy 4.4.0
+##  https://docs.tweepy.org/en/v4.4.0/exceptions.html#tweepy.errors.HTTPException.api_codes
+
+##### Tweepy GitHub page
+## https://github.com/tweepy/tweepy/issues/1736
+
+##### Note to self: Check version of tweepy.
