@@ -677,9 +677,9 @@ file_extension = [
 
 afraid_examples = [
     'Like someone in tech support when confronted with a printer.',
-    'Like most people playing Resident Evil with the lights off.', ## Claire Redfield in the remastered RE2 is defo my fictional transition goal.
+    'Like most people playing Resident Evil with the lights off.', ## Claire Redfield in the RE2 remake is defo my fictional transition goal.
     'Like someone in tech support when an update fucks up.', ## Every day, probably.
-    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.' ## Mofo got tired of listening to The Who, so he opted for vengeance.
+    f'Like practically everyone when they notice the Duolingo owl following them when they missed their lesson in {random.choice(earth_languages)}.', ## Mofo got tired of listening to The Who, so he opted for vengeance.
     'Like someone when their parents say their full name.'
 ]
 
@@ -697,7 +697,7 @@ worse_than_pastels = [
 ##### ##### ##### ##### ##### ##### ##### ##### ##### #####  ##### #####
 
 tweetlist = [
-    ##### ##### Tweets 1 to 5 • Conditional Tweets
+    ##### ##### ##### ##### Tweets 1 to 5 • Conditional Tweets
     'I await Wednesday with great interest.',
     'Still isn\'t Halloween yet...',
     'I\'ll be sad when October is gone.',
@@ -705,14 +705,15 @@ tweetlist = [
     'Got a 1 in 7 chance of posting this on the right day, but thank goth it\'s Wednesday.',
 
 
-    ##### ##### Tweets 6 to 9 • Song Tweets
+    ##### ##### ##### ##### Tweets 6 to 10 • Song Tweets
     f'Why do I have {random.choice(song_list)} stuck in my head all of a sudden?',
     f'I\'m sitting there doing fuck-all and all of a sudden {random.choice(song_list)} plays in my head. Pretty sure my brain\'s a radio station at this point.',
     f'I\'ve had the same song stuck in my head for the last {random.randint(2, 14)} days... {random.choice(song_list)}',
     f'Sometimes I find myself bored out of my mind before {random.choice(song_list)} starts playing in my head.',
+    f'I don\'t know what this is playing on the radio, but I\'d much rather be listening to {random.choice(song_list)} right now.',
 
 
-    ##### ##### Tweets 10 to 15 • Street Food Tweets
+    ##### ##### ##### ##### Tweets 11 to 16 • Street Food Tweets
     f'I\'ve got street food stuck on my mind right now. I think my brain\'s telling me to have some {random.choice(streetfood)}.', 
     f'If I could summon food out of thin air, I\'d probably have some {random.choice(streetfood)} in front of me right now.', 
     f'What I need is a sling ring and some highly advanced technology so that I can give Sailor Pluto some {random.choice(streetfood)} and a much needed hug.',
@@ -721,7 +722,7 @@ tweetlist = [
     f'I like to imagine that if I had magical powers, I\'d end up using them to summon some {random.choice(streetfood)}.',
 
 
-    ##### ##### Tweets 16 to 21 • Celebrity Tweets
+    ##### ##### ##### ##### Tweets 17 to 22 • Celebrity Tweets
     f'Mother\'s been trying to guess who has been on my mind today. {random.choice(celeb)} was her latest guess.', 
     f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
     f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
@@ -730,46 +731,64 @@ tweetlist = [
     f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
 
 
-    ##### ##### Tweets 22 to 22 • Gaming Peeves
+    ##### ##### ##### ##### Tweets 23 to 24 • Gaming Peeves
     f'I don\'t know what the worst thing I\'ve personally experienced while gaming is, but {random.choice(gamingpeeves)} ranks high on the list.',
     f'The last thing I want when I\'m gaming is {random.choice(gamingpeeves)}.',
 
 
-    ##### ##### Tweets 23 to 25 • #wenclair
+    ##### ##### ##### ##### Tweets 25 to 27 • #wenclair
     f'I hope they make #wenclair canon.',
     f'I feel like, if you put them in the right scenario, {random.choice(fictional_wenclair_stans)} would join the #wenclair bandwagon.',
     f'Took me {random.randint(1,2500)/10000} seconds to join the #wenclair fandom.',
 
 
-    ##### ##### Tweets 26 to 50 • Tweets with Random Numbers Involved
+    ##### ##### ##### ##### Tweets 28 to 52 • Tweets with Random Numbers Involved
+    f'A wig from a bargain store and a pinafore is not an ideal cosplay - it\'s more like {random.randint(1,300)/100}/10 - though kudos for the effort at least.',
+    f'I think I\'m the most prepared in the Addams clan. Pugsley\'s guess of {random.randint(1, 1000)} million contingency plans was quite the overstatement.',
+    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.',
+
+    ##### Cats • Tweets 31 to 31
+    f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
+
+    ##### Computers & Gaming • Tweets 32 to 35
+    f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
+    f'Why do people make doing certain processes hard? I swear it ends up taking {random.randint(2,6)} hours to do something that should take minutes.',
+    f'Sometimes, my internet wants to run like it was made in {random.randint(1327,1933)}.',
+    f'Trying to get VS Code, WSL and GitHub to play ball together\'s a pain in the ass. At least {random.randint(95,175)}% pure frustration.',
+
+    ##### Films • Tweets 36 to 36
+    f'What in the fresh fuck is this Barbie thing? I\'ve sat there for {random.randint(1, 9)} hours trying to understand it only to still be confused.',
+
+    ##### Food & Drink • Tweets 37 to 41
+    f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750,997)/100}',
+    f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there\'s a {random.randint(35,65)}% chance they have.',
+    f'I\'m not surprised that lettuce won. I give myself {random.randint(2, 30)} days before I have some surreal dream about a civilization of sentient pieces of lettuce.',
+    f'Found myself waiting {random.randint(45,195)} minutes for a meal at a restaurant once. Not going there again.',
+    f'Asking myself whether I should make myself a cup of tea or wait until later. I give it {random.randint(30,150)} minutes before the urge for a cup of tea becomes overwhelming.',
+
+    ##### LGBT • Tweets 42 to 42
+    f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {gaytired}% tired.',
+    
+    ##### Lie-ins and Sleeping • Tweets 43 to 45
+    f'Sometimes, {random.randint(7,10)}:{minutes_2lz}am feels like it\'s too early.',
+    f'I hate it when I want a lie in and something wakes me up. {random.randint(1,101)/100}/10 - do not recommend.',
+    f'I want a lie in. I\'m {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
+
+    ##### Music • Tweets 46 to 46
+    f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
+
+    ##### Observations • Tweets 47 to 48
     f'I\'ve been counting how many times Father has said "cara mia" to Mother today. {random.randint(1, 144)} times and counting...',
     f'For {random.randint(1, 751)/1000} seconds I imagined Father spending some time in France. As for how dramatic he\'d be on a scale of 1 to 10 when he notices everyone speaking French, I\'d say at least {random.randint(50, 1000)}.',
+
+    ##### Weather • Tweets 49 to 52
     f'Where\'s a thunderstorm when you need one? It\'s been at least {random.randint(3,8)} days since the last one.',
     f'There\'s nothing better than a peaceful night, a gentle breeze and a temperature of {random.randint(16,22)}°C',
     f'I can\'t tell of there\'s a thunderstorm coming or Pugsley\'s had beans again. {random.randint(2,13)} cans of air freshener won\'t be enough if it\'s not thunder.',
-    f'Sometimes, my internet wants to run like it was made in {random.randint(1327,1933)}.',
-    f'Trying to get VS Code, WSL and GitHub to play ball together\'s a pain in the ass. At least {random.randint(95,175)}% pure frustration.',
-    f'Why do people make doing certain processes hard? I swear it ends up taking {random.randint(2,6)} hours to do something that should take minutes.',
-    f'Found myself waiting {random.randint(45,195)} minutes for a meal at a restaurant once. Not going there again.',
-    f'Sometimes, {random.randint(7,10)}:{minutes_2lz}am feels like it\'s too early.',
-    f'Gay and tired? That sounds like me in the evenings. {100-gaytired}% gay, {gaytired}% tired.',
-    f'What in the fresh fuck is this Barbie thing? I\'ve sat there for {random.randint(1, 9)} hours trying to understand it only to still be confused.',
-    f'There\'s nothing worse than a bad internet connection, especially when I\'m trying to game. {random.randint(250,10000)/1000}Mbps? Seriously?',
-    f'I sometimes find myself drinkng tea as much as Captain Janeway drinks coffee. She drank coffee at Warp {random.randint(750,997)/100}',
-    f'I hate it when I want a lie in and something wakes me up. {random.randint(1,101)/100}/10 - do not recommend.',
-    f'I want a lie in. I\'m {random.randint(9000,10000)/100}% sure I\'m mentally still in bed.',
-    f'Spotted a black cat out of the window. It\'s probably thinking about purrgatory, either that or one of their {random.randint(1,100000)} plans for world domination.',
     f'When the weather app says it\'s going to rain and then it doesn\'t. Ugh... {random.randint(60,90)}% chance, my ass.',
-    f'A wig from a bargain store and a pinafore is not an ideal cosplay - it\'s more like {random.randint(1,300)/100}/10 - though kudos for the effort at least.',
-    f'I think I\'m the most prepared in the Addams clan. Pugsley\'s guess of {random.randint(1, 1000)} million contingency plans was quite the overstatement.',
-    f'My brain plays random elevator music if I stand there long enough. Makes me sound like an NPC. Kicks in {random.randint(1000,3000)/1000} seconds after the doors close.',
-    f'I sometimes have those momemts when all I can hear is someone shouting loudly at something out of pure frustration. I\'d say it\'s probably at around {random.randint(110,145)} decibels.',
-    f'I\'m thinking about food. Odds are it\'s because I can smell it cooking. I hope whoever cooked it hasn\'t burned it, though knowing some people, there\'s a {random.randint(35,65)}% chance they have.',
-    f'I\'m not surprised that lettuce won. I give myself {random.randint(2, 30)} days before I have some surreal dream about a civilization of sentient pieces of lettuce.',
-    f'Asking myself whether I should make myself a cup of tea or wait until later. I give it {random.randint(30,150)} minutes before the urge for a cup of tea becomes overwhelming.',
 
 
-    ##### ##### Tweets 51 to 78 • Formatted Generic Tweets
+    ##### ##### ##### ##### Tweets 53 to 80 • Formatted Generic Tweets
     f'Pugsley tried to guess what I dreamt about the other night. He guessed it involved {random.choice(celeb)} and some {random.choice(streetfood)} while {random.choice(song_list)} played quietly in the background.',
     f'Thing\'s had a guess at what I dreamt of the other day. "A day out with {random.choice(celeb)}, {random.choice(scenarios)}" was what he wrote down.',
     f'Someone just guessed what\'s on my mind now. They said, "{random.choice(celeb)}, some {random.choice(streetfood)}, and watching {random.choice(favefilm_scen)}". They\'re not far off.',
@@ -800,7 +819,7 @@ tweetlist = [
     f'Sometimes, you just have to tell people things that are stupidly obvious. "{random.choice(stupidly_obvious_things)}", for example.',
 
 
-    ##### ##### Tweets 79 to 126 • Generic Tweets
+    ##### ##### ##### ##### Tweets 81 to 128 • Generic Tweets
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
     'I am not perky.',
