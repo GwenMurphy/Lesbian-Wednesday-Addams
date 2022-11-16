@@ -2,7 +2,7 @@ import random
 
 gaytired = random.randint(1,200)/10
 
-minutes_2lz = '%02d' % (random.randint(1,60),)
+minutes_2lz = '%02d' % (random.randint(1,59),)
 
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 ##### The arrays below help to randomise the strings in the #####
@@ -726,7 +726,7 @@ tweetlist = [
     f'Mother\'s been trying to guess who has been on my mind today. {random.choice(celeb)} was her latest guess.', 
     f'Ah, what I would not give for {random.choice(celeb)} to look me in the eye and say \'Cara mia\'.',
     f'I don\'t know who is on my mind more right now - {random.choice(celeb)} or {random.choice(celeb)}.',
-    f'Dreamt I was looking at {random.choice(celeb)} the way Mother and Father look at one another. I\'m about as surprised as I would be if you said the sun was hotter than {random.choice(cold_things)}.'
+    f'Dreamt I was looking at {random.choice(celeb)} the way Mother and Father look at one another. I\'m about as surprised as I would be if you said the sun was hotter than {random.choice(cold_things)}.',
     f'That moment when you look at {random.choice(celeb)} and you feel the last vestiges of your heterosexuality disappearing. Yes. Mother noticed.',
     f'I\'m gay for {random.choice(celeb)}. I\'m pretty sure Mother knows.',
 
@@ -819,7 +819,7 @@ tweetlist = [
     f'Sometimes, you just have to tell people things that are stupidly obvious. "{random.choice(stupidly_obvious_things)}", for example.',
 
 
-    ##### ##### ##### ##### Tweets 81 to 128 • Generic Tweets
+    ##### ##### ##### ##### Tweets 81 to 129 • Generic Tweets
     'This Voldemort fellow looks as though Uncle Fester forgot his nose.',
     'Remind me to ask Cousin Itt if that\'s a relative of his next to Han Solo.',
     'I am not perky.',
@@ -879,3 +879,7 @@ conditional_tweetlist = [
     'Thank goth it\'s Wednesday. The best day of the week, though I may be a bit biased on that one.' ##### conditional_tweet[4]
 ]
 
+##### This little bit at the bottom is for testing purposes.
+##### Commented out when not needed.
+#for i in range(0, len(tweetlist)):
+#    print(i+1, tweetlist[i])
