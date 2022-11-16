@@ -237,19 +237,22 @@ def tweet():
 try:
     tweet()
 except TweepyException as err:
-    if err.api_codes == 186:
+    print(err.__dict__)
+    """
+    if err == 186:
         ##### If the tweet is too long.
         print(f'{time.asctime()} - Error 186 - Tweet {twln} of {twln_tot}: Tweet needs to be shortened.')
         quit()
-    if err.api_codes == 187:
+    if err == 187:
         ##### If the same tweet was published in the last 24 hours.
         print(f'{time.asctime()} - Error 187 - Tweet {twln} of {twln_tot}: Duplicate tweet detected. Same thing posted since this time yesterday.')
         quit() 
-    if err.api_codes == 215:
+    if err == 215:
         ##### If the authentication data is a bit iffy.
         print(f'{time.asctime()} - Error 215 - Bad authentication data. Please make sure your keys/credentials are correct and try again.')
         quit()
-    if err.api_codes == 401:
+    if err == 401:
         ##### If someone accesses the thing when they shouldn't.
         print(f'{time.asctime()} - Error 401 - Unauthorized. Please make sure your keys/credentials are correct and try again.')
         quit()
+    """
